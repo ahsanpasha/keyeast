@@ -5,48 +5,57 @@
     font-weight: 400;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'Plus Jakarta Sans';
     src: url('Fonts/PlusJakartaSans-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'Plus Jakarta Sans';
     src: url('Fonts/PlusJakartaSans-SemiBold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'Plus Jakarta Sans';
     src: url('Fonts/PlusJakartaSans-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'Plus Jakarta Sans';
     src: url('Fonts/loos-normal-regular.otf') format('opentype');
-    font-weight: 800; /* ExtraBold */
+    font-weight: 800;
+    /* ExtraBold */
     font-style: normal;
 }
+
 @font-face {
     font-family: 'Montserrat';
     src: url('Fonts/Montserrat-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'Montserrat';
     src: url('Fonts/Montserrat-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'Montserrat';
     src: url('Fonts/Montserrat-SemiBold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'Montserrat';
     src: url('Fonts/Montserrat-Bold.ttf') format('truetype');
@@ -68,33 +77,38 @@ body {
 /* ========== REVEAL SCROLL ANIMATIONS ========== */
 .reveal {
     opacity: 0;
-    transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
-                transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     will-change: opacity, transform;
 }
+
 .reveal.fade-in {
     transform: scale(0.97);
 }
+
 .reveal.slide-up {
     transform: translateY(40px);
 }
+
 .reveal.slide-left {
     transform: translateX(-40px);
 }
+
 .reveal.slide-right {
     transform: translateX(40px);
 }
+
 .reveal.active {
     opacity: 1;
     transform: translate(0) scale(1);
 }
 
 /* ========== INTERACTIVE HOVERS & SMOOTH TRANSITIONS ========== */
-.nav-links a, 
-.btn-show-me, 
-.tab, 
-.profileImg, 
-.logos img, 
+.nav-links a,
+.btn-show-me,
+.tab,
+.profileImg,
+.logos img,
 .footer-nav a,
 .menu-toggle .bar {
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -111,9 +125,11 @@ body {
     box-shadow: 0 10px 25px rgba(225, 200, 34, 0.45);
     filter: brightness(1.06);
 }
+
 .btn-show-me img {
     transition: transform 0.3s ease;
 }
+
 .btn-show-me:hover img {
     transform: translateX(6px);
 }
@@ -122,6 +138,7 @@ body {
 .next-level-image-wrapper {
     transition: transform 0.4s ease;
 }
+
 .next-level-image-wrapper:hover {
     transform: translateY(-5px);
 }
@@ -143,6 +160,7 @@ body {
 .logos img {
     filter: grayscale(1) opacity(0.65);
 }
+
 .logos img:hover {
     transform: scale(1.06);
     filter: grayscale(0) opacity(1);
@@ -163,18 +181,22 @@ body {
     cursor: pointer;
     z-index: 1001;
 }
+
 .menu-toggle .bar {
     height: 3px;
     width: 100%;
     background-color: #001726;
     border-radius: 10px;
 }
+
 .menu-toggle.active .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
 }
+
 .menu-toggle.active .bar:nth-child(2) {
     opacity: 0;
 }
+
 .menu-toggle.active .bar:nth-child(3) {
     transform: translateY(-9px) rotate(-45deg);
 }
@@ -359,7 +381,6 @@ body {
     text-transform: capitalize;
     color: #EEDD69;
     text-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.65);
-    padding: 5px 30px;
     position: absolute;
     bottom: 30px;
 }
@@ -501,7 +522,8 @@ body {
     line-height: 1.2;
     letter-spacing: -0.77px;
     margin-bottom: 32px;
-    padding: 5px 0; /* Add slight padding to prevent clipping with background-clip text */
+    padding: 5px 0;
+    /* Add slight padding to prevent clipping with background-clip text */
 
     background: linear-gradient(148.76deg, #3761B7 19.5%, #1D3A75 99.29%);
     -webkit-background-clip: text;
@@ -781,6 +803,7 @@ body {
     .navbar {
         padding: 15.25px 120px 14.75px;
     }
+
     .next-level-container {
         padding: 52px 100px 50px 100px;
     }
@@ -791,7 +814,9 @@ body {
     .aboutSection {
         padding: 63px 60px 71px;
     }
-    .footer-top, .footer-contact {
+
+    .footer-top,
+    .footer-contact {
         padding: 27px 60px 34px;
     }
 }
@@ -802,6 +827,7 @@ body {
         font-size: 82px;
         line-height: 96px;
     }
+
     .aboutCards {
         gap: 40px;
     }
@@ -812,26 +838,33 @@ body {
     .navbar {
         padding: 15px 60px;
     }
+
     .next-level-container {
         padding: 50px 60px;
     }
+
     .what-we-do {
         padding: 60px 60px 80px;
     }
+
     .aboutSection {
         padding: 60px 60px;
     }
+
     .clientsSection {
         padding: 36px 40px 36px 60px;
     }
+
     .gradientBar {
         padding-left: 320px;
     }
+
     .profileImg {
         width: 300px;
         height: 340px;
         bottom: -20px;
     }
+
     .textBox {
         padding-left: 320px;
     }
@@ -843,26 +876,32 @@ body {
         font-size: 72px;
         line-height: 84px;
     }
+
     .next-level-container {
         gap: 40px;
     }
+
     .aboutCards {
         flex-direction: column;
         gap: 80px;
         margin-top: 80px;
     }
+
     .aboutCard {
         max-width: 800px;
         margin: 0 auto;
     }
+
     .profileImg {
         width: 330px;
         height: 380px;
         bottom: -30px;
     }
+
     .gradientBar {
         padding-left: 360px;
     }
+
     .textBox {
         padding-left: 360px;
     }
@@ -870,17 +909,24 @@ body {
 
 /* 1250px */
 @media (max-width: 1250px) {
-    .next-level-title, .services-title, .aboutHeading, .active-content .title {
+
+    .next-level-title,
+    .services-title,
+    .aboutHeading,
+    .active-content .title {
         font-size: 45px;
         line-height: 1.1;
     }
+
     .activecontactdiv img {
         width: 500px;
         height: 320px;
     }
+
     .logos {
         gap: 30px;
     }
+
     .logos img {
         height: 110px;
     }
@@ -923,7 +969,7 @@ body {
         flex-direction: column;
         text-align: center;
     }
-    
+
     .next-level-bg {
         width: 400px;
         height: 400px;
@@ -951,7 +997,6 @@ body {
     .quote-author {
         position: relative;
         bottom: auto;
-        padding: 10px 0 25px 0;
         text-shadow: none;
     }
 
@@ -1061,7 +1106,7 @@ body {
         font-size: 60px;
         line-height: 72px;
     }
-    
+
     .tab {
         padding: 0 40px;
         font-size: 18px;
@@ -1088,7 +1133,10 @@ body {
         line-height: 58px;
     }
 
-    .next-level-title, .services-title, .aboutHeading, .active-content .title {
+    .next-level-title,
+    .services-title,
+    .aboutHeading,
+    .active-content .title {
         font-size: 34px;
         line-height: 42px;
     }
@@ -1121,7 +1169,7 @@ body {
     .logos img {
         height: 70px;
     }
-    
+
     .footer-logo {
         max-width: 240px;
     }
@@ -1172,10 +1220,13 @@ body {
     }
 
     .next-level-bg {
-        display: none; /* Hide background circle on tiny screen sizes for cleaner look */
+        display: none;
+        /* Hide background circle on tiny screen sizes for cleaner look */
     }
 
-    .aboutSection, .next-level-container, .what-we-do {
+    .aboutSection,
+    .next-level-container,
+    .what-we-do {
         padding: 40px 20px;
     }
 }
@@ -1187,7 +1238,10 @@ body {
         line-height: 40px;
     }
 
-    .next-level-title, .services-title, .aboutHeading, .active-content .title {
+    .next-level-title,
+    .services-title,
+    .aboutHeading,
+    .active-content .title {
         font-size: 28px;
         line-height: 36px;
     }
@@ -1236,7 +1290,7 @@ body {
     .navbar {
         padding: 15px 20px;
     }
-    
+
     .hero-subtitle {
         font-size: 16px;
     }
@@ -1256,7 +1310,11 @@ body {
 
 /* 390px */
 @media (max-width: 390px) {
-    .next-level-title, .services-title, .aboutHeading, .active-content .title {
+
+    .next-level-title,
+    .services-title,
+    .aboutHeading,
+    .active-content .title {
         font-size: 25px;
         line-height: 32px;
     }
