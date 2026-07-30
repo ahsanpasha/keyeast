@@ -321,6 +321,11 @@ body {
     border: none;
 }
 
+.arrow {
+    width: 25px;
+    height: 25px;
+}
+
 /* Next Level Learning Section */
 .next-level {
     position: relative;
@@ -1111,8 +1116,11 @@ body {
     }
 
     .btn-show-me {
-        font-size: 25px;
-        height: 68px;
+        font-size: 24px;
+        height: 65px;
+        padding: 0 43px;
+        border-radius: 9px;
+        width: auto;
     }
 
     .next-level-container {
@@ -1295,8 +1303,16 @@ body {
     }
 
     .arrow {
-        width: 22px;
-        height: 22px;
+        width: 23px;
+        height: 23px;
+    }
+
+    .btn-show-me {
+        font-size: 22px;
+        height: 61px;
+        padding: 0 39px;
+        border-radius: 10px;
+        width: auto;
     }
 
     .footer-logo {
@@ -1518,8 +1534,16 @@ body {
     }
 
     .arrow {
-        width: 21px;
-        height: 21px;
+        width: 22px;
+        height: 22px;
+    }
+
+    .btn-show-me {
+        font-size: 21px;
+        height: 58px;
+        padding: 0 35px;
+        border-radius: 11px;
+        width: auto;
     }
 
     .footer-logo {
@@ -1800,8 +1824,11 @@ body {
     }
 
     .btn-show-me {
-        height: 66px;
-        font-size: 23px;
+        height: 49px;
+        font-size: 17.5px;
+        padding: 0 28px;
+        border-radius: 13px;
+        width: auto;
     }
 
     .arrow {
@@ -2046,12 +2073,12 @@ body {
         line-height: 68px;
         margin-bottom: 52px;
     }
-
     .btn-show-me {
-        height: 64px;
-        padding: 0 40px;
+        height: 47px;
+        padding: 0 26px;
         width: auto;
-        font-size: 22px;
+        font-size: 16.5px;
+        border-radius: 13px;
     }
 
     .arrow {
@@ -2318,14 +2345,16 @@ body {
     }
 
     .btn-show-me {
-        height: 62px;
-        padding: 0 36px;
-        font-size: 21px;
+        height: 46px;
+        padding: 0 24px;
+        font-size: 16px;
+        border-radius: 12px;
+        width: auto;
     }
 
     .arrow {
-        width: 18px;
-        height: 18px;
+        width: 17px;
+        height: 17px;
     }
 
     /* === NEXT-LEVEL — COLUMN SWITCH === */
@@ -2649,14 +2678,16 @@ body {
     }
 
     .btn-show-me {
-        height: 60px;
-        padding: 0 32px;
-        font-size: 20px;
+        height: 45px;
+        padding: 0 22px;
+        font-size: 15px;
+        border-radius: 12px;
+        width: auto;
     }
 
     .arrow {
-        width: 17px;
-        height: 17px;
+        width: 16px;
+        height: 16px;
     }
 
     /* Next-level */
@@ -2869,15 +2900,16 @@ body {
     }
 
     .btn-show-me {
-        height: 58px;
-        padding: 0 30px;
-        font-size: 19px;
-        border-radius: 10px;
+        height: 44px;
+        padding: 0 20px;
+        font-size: 14.5px;
+        border-radius: 11px;
+        width: auto;
     }
 
     .arrow {
-        width: 16px;
-        height: 16px;
+        width: 15px;
+        height: 15px;
     }
 
     /* Next-level */
@@ -3095,7 +3127,7 @@ body {
     }
 
     .menu-toggle {
-        width: 26px;
+        width: 24px;
         height: 18px;
     }
 
@@ -3117,14 +3149,16 @@ body {
     }
 
     .btn-show-me {
-        height: 54px;
-        padding: 0 28px;
-        font-size: 17.5px;
+        height: 44px;
+        padding: 0 18px;
+        font-size: 14px;
+        border-radius: 11px;
+        width: auto;
     }
 
     .arrow {
-        width: 15px;
-        height: 15px;
+        width: 14px;
+        height: 14px;
     }
 
     /* Next-level */
@@ -3367,15 +3401,16 @@ body {
     }
 
     .btn-show-me {
-        height: 52px;
-        padding: 0 26px;
-        font-size: 16.5px;
-        border-radius: 9px;
+        height: 43px;
+        padding: 0 16px;
+        font-size: 13.5px;
+        border-radius: 10px;
+        width: auto;
     }
 
     .arrow {
-        width: 14px;
-        height: 14px;
+        width: 13px;
+        height: 13px;
     }
 
     /* Next-level */
@@ -3606,14 +3641,16 @@ body {
     }
 
     .btn-show-me {
-        height: 50px;
-        padding: 0 24px;
-        font-size: 16px;
+        height: 43px;
+        padding: 0 14px;
+        font-size: 13px;
+        border-radius: 10px;
+        width: auto;
     }
 
     .arrow {
-        width: 13px;
-        height: 13px;
+        width: 12.5px;
+        height: 12.5px;
     }
 
     /* Next-level */
@@ -3835,9 +3872,16 @@ body {
     }
 
     .btn-show-me {
-        height: 48px;
-        padding: 0 22px;
-        font-size: 15.5px;
+        height: 42px;
+        padding: 0 14px;
+        font-size: 13px;
+        border-radius: 10px;
+        width: auto;
+    }
+
+    .arrow {
+        width: 12px;
+        height: 12px;
     }
 
     .next-level-container {
@@ -4277,8 +4321,8 @@ body {
     }
 
     .menu-toggle {
-        width: 24px;
-        height: 16px;
+        width: 20px;
+        height: 14px;
     }
 
     .hero {
