@@ -826,133 +826,675 @@ body {
 
 /* ==================== RESPONSIVE MEDIA QUERIES ==================== */
 
-/* 1850px */
+/* 1850px — 15.9% of way from 1920→1480 */
 @media (max-width: 1850px) {
     .navbar {
-        padding: 15.25px 120px 14.75px;
+        padding: 14.5px 144px 12.5px;
+    }
+
+    .nav-links {
+        gap: 75px;
+    }
+
+    .nav-links a {
+        font-size: 19px;
     }
 
     .hero {
-        padding: 200px 20px 120px;
-    }
-
-    .next-level-container {
-        padding: 52px 100px 50px 100px;
-    }
-
-    .logos {
-        gap: 20px
-    }
-}
-
-/* 1750px */
-@media (max-width: 1750px) {
-    .aboutSection {
-        padding: 63px 60px 71px;
-    }
-
-    .hero-title {
-        font-size: 80px;
-        margin-bottom: 40px;
+        padding: 218px 20px 131px;
     }
 
     .hero-subtitle {
-        font-size: 24px;
-        margin-bottom: 40px;
+        font-size: 27px;
+        margin-bottom: 53px;
     }
 
-    .btn-show-me {
-        font-size: 22px;
+    .hero-title {
+        font-size: 84px;
+        line-height: 98px;
+        margin-bottom: 72px;
+    }
+
+    .next-level-container {
+        padding: 50px 136px 50px 105px;
+        gap: 57px;
     }
 
     .quote-text {
-        font-size: 30px;
-        line-height: 40px;
+        font-size: 33px;
+        line-height: 46px;
     }
 
     .quote-author {
-        font-size: 28px;
-        line-height: 34px;
+        font-size: 29px;
+        line-height: 40px;
     }
 
-    .footer-value {
-        font-size: 28px;
-    }
-
-    .next-level-subtitle,
-    .aboutTag {
+    .next-level-subtitle {
         font-size: 24px;
+        margin-bottom: 21px;
     }
 
-    .next-level-title,
-    .services-title,
-    .active-content .title,
-    .aboutHeading {
+    .next-level-title {
         font-size: 50px;
+        margin-bottom: 36px;
     }
 
     .next-level-desc {
-        font-size: 18px;
+        font-size: 19px;
+        margin-bottom: 36px;
     }
 
-    .services-subtitle,
-    .active-content ul li {
+    .what-we-do {
+        padding: 66px 175px 81px;
+    }
+
+    .services-subtitle {
         font-size: 24px;
+        margin-bottom: 21px;
+    }
+
+    .services-title {
+        font-size: 50px;
+        margin-bottom: 52px;
+    }
+
+    .tabs-container {
+        height: 75px;
+        margin-bottom: 39px;
+    }
+
+    .tab {
+        width: 277px;
+        font-size: 19.5px;
+    }
+
+    .active-tab {
+        width: 277px;
+        height: 62px;
+    }
+
+    .active-content .title {
+        font-size: 48px;
+        margin-bottom: 31px;
+    }
+
+    .active-content ul li {
+        font-size: 25.5px;
+        line-height: 48px;
+    }
+
+    .activecontactdiv img {
+        width: 595px;
+        height: 370px;
+    }
+
+    .aboutSection {
+        padding: 60px 91px 68px;
+    }
+
+    .aboutTag {
+        font-size: 24px;
+        margin-bottom: 21px;
+    }
+
+    .aboutHeading {
+        font-size: 50px;
+        margin-bottom: 63px;
+    }
+
+    .aboutCards {
+        gap: 55px;
+        margin-top: 122px;
+    }
+
+    .gradientBar {
+        height: 152px;
+        padding-left: 375px;
+    }
+
+    .profileImg {
+        width: 349px;
+        height: 387px;
+    }
+
+    .textBox {
+        padding-left: 375px;
+        padding-top: 19px;
     }
 
     .name {
-        font-size: 36px;
-
+        font-size: 38px;
     }
 
-    .role,
-    .footer-bottom p {
-        font-size: 20px;
+    .role {
+        font-size: 24px;
     }
 
     .desc {
-        font-size: 16px;
+        font-size: 17px;
+    }
+
+    .clientsSection {
+        padding: 35px 0px 32px 79px;
     }
 
     .clientsHeading {
-        font-size: 66px;
+        font-size: 69px;
+    }
+
+    .logos {
+        gap: 50px;
     }
 
     .logos img {
-        height: 110px;
+        height: 129px;
+    }
+
+    .footer-top {
+        padding: 27px 78px 34px;
+    }
+
+    .footer-nav {
+        gap: 94px;
     }
 
     .footer-nav a {
         font-size: 24px;
     }
 
+    .footer-contact {
+        gap: 55px;
+        padding-bottom: 40px;
+    }
+
+    .footer-contact-item {
+        gap: 24px;
+    }
+
+    .footer-label {
+        font-size: 23px;
+    }
+
+    .footer-value {
+        font-size: 29px;
+    }
+
+    .footer-bottom {
+        height: 60px;
+    }
+
+    .footer-bottom p {
+        font-size: 21px;
+    }
+
+    .logonavbar {
+        height: 56px;
+    }
+
+    .arrow {
+        width: 24px;
+        height: 24px;
+    }
+
+    .footer-logo {
+        width: 290px;
+    }
+
+    .footer-icon {
+        width: 66px;
+        height: 66px;
+    }
+}
+
+/* 1750px — 38.6% of way from 1920→1480 */
+@media (max-width: 1750px) {
+    .navbar {
+        padding: 13.5px 136px 13px;
+    }
+
+    .nav-links {
+        gap: 70px;
+    }
+
+    .nav-links a {
+        font-size: 18px;
+    }
+
+    .hero {
+        padding: 205px 20px 124px;
+    }
+
+    .hero-subtitle {
+        font-size: 25px;
+        margin-bottom: 49px;
+    }
+
+    .hero-title {
+        font-size: 80px;
+        line-height: 92px;
+        margin-bottom: 68px;
+    }
+
+    .btn-show-me {
+        font-size: 25px;
+        height: 68px;
+    }
+
+    .next-level-container {
+        padding: 49px 128px 49px 99px;
+        gap: 52px;
+    }
+
+    .next-level-bg {
+        width: 550px;
+        height: 550px;
+    }
+
+    .quote-text {
+        font-size: 31px;
+        line-height: 43px;
+    }
+
+    .quote-author {
+        font-size: 27px;
+        line-height: 40px;
+    }
+
+    .next-level-subtitle,
+    .services-subtitle,
+    .aboutTag {
+        font-size: 23px;
+        margin-bottom: 20px;
+    }
+
+    .next-level-title,
+    .services-title,
+    .aboutHeading {
+        font-size: 47px;
+    }
+
+    .next-level-title {
+        margin-bottom: 33px;
+    }
+
+    .services-title {
+        margin-bottom: 49px;
+    }
+
+    .aboutHeading {
+        margin-bottom: 57px;
+    }
+
+    .next-level-desc {
+        font-size: 18px;
+        margin-bottom: 33px;
+    }
+
+    .what-we-do {
+        padding: 62px 165px 76px;
+    }
+
+    .tabs-container {
+        height: 72px;
+        margin-bottom: 38px;
+    }
+
+    .tab {
+        width: 272px;
+        font-size: 19px;
+    }
+
+    .active-tab {
+        width: 272px;
+        height: 58px;
+    }
+
+    .active-content .title {
+        font-size: 42px;
+        margin-bottom: 28px;
+    }
+
+    .active-content ul li {
+        font-size: 25px;
+        line-height: 46px;
+    }
+
+    .activecontactdiv img {
+        width: 560px;
+        height: 348px;
+    }
+
+    .aboutSection {
+        padding: 56px 85px 64px;
+    }
+
+    .aboutCards {
+        gap: 48px;
+        margin-top: 110px;
+    }
+
+    .gradientBar {
+        height: 143px;
+        padding-left: 355px;
+    }
+
+    .profileImg {
+        width: 328px;
+        height: 364px;
+        bottom: -33px;
+    }
+
+    .textBox {
+        padding-left: 355px;
+        padding-top: 18px;
+    }
+
+    .name {
+        font-size: 36px;
+    }
+
+    .role {
+        font-size: 23px;
+    }
+
+    .desc {
+        font-size: 16px;
+    }
+
+    .clientsSection {
+        padding: 32px 0px 30px 74px;
+        gap: 36px;
+    }
+
+    .clientsHeading {
+        font-size: 65px;
+    }
+
+    .logos {
+        gap: 44px;
+    }
+
+    .logos img {
+        height: 121px;
+    }
+
+    .footer-top {
+        padding: 27px 72px 34px;
+    }
+
+    .footer-nav {
+        gap: 88px;
+    }
+
+    .footer-nav a {
+        font-size: 23px;
+    }
+
+    .footer-contact {
+        gap: 48px;
+        padding-bottom: 38px;
+    }
+
+    .footer-contact-item {
+        gap: 23px;
+    }
+
     .footer-label {
         font-size: 22px;
     }
 
-    .footer-top,
-    .footer-contact {
-        padding: 27px 60px 34px;
+    .footer-value {
+        font-size: 27px;
+    }
+
+    .footer-bottom {
+        height: 56px;
+    }
+
+    .footer-bottom p {
+        font-size: 20px;
+    }
+
+    .logonavbar {
+        height: 52px;
+    }
+
+    .arrow {
+        width: 22px;
+        height: 22px;
+    }
+
+    .footer-logo {
+        width: 270px;
+    }
+
+    .footer-icon {
+        width: 62px;
+        height: 62px;
     }
 }
 
-/* 1650px */
+/* 1650px — 61.4% of way from 1920→1480 */
 @media (max-width: 1650px) {
+    .navbar {
+        padding: 12.5px 127px 12px;
+    }
+
+    .nav-links {
+        gap: 66px;
+    }
+
+    .nav-links a {
+        font-size: 17px;
+    }
+
+    .hero {
+        padding: 192px 20px 115px;
+    }
+
+    .hero-subtitle {
+        font-size: 24px;
+        margin-bottom: 46px;
+    }
+
     .hero-title {
-        font-size: 82px;
-        line-height: 96px;
+        font-size: 74px;
+        line-height: 86px;
+        margin-bottom: 63px;
+    }
+
+    .next-level-container {
+        padding: 47px 120px 48px 93px;
+        gap: 48px;
+    }
+
+    .next-level-bg {
+        width: 500px;
+        height: 500px;
+    }
+
+    .quote-text {
+        font-size: 28px;
+        line-height: 41px;
+    }
+
+    .quote-author {
+        font-size: 25px;
+        line-height: 38px;
+    }
+
+    .next-level-subtitle,
+    .services-subtitle,
+    .aboutTag {
+        font-size: 21px;
+        margin-bottom: 18px;
+    }
+
+    .next-level-title,
+    .services-title,
+    .aboutHeading {
+        font-size: 44px;
+    }
+
+    .next-level-title {
+        margin-bottom: 31px;
+    }
+
+    .services-title {
+        margin-bottom: 45px;
+    }
+
+    .aboutHeading {
+        margin-bottom: 53px;
+    }
+
+    .next-level-desc {
+        font-size: 17px;
+        margin-bottom: 31px;
+    }
+
+    .what-we-do {
+        padding: 57px 154px 72px;
+    }
+
+    .tabs-container {
+        height: 69px;
+        margin-bottom: 37px;
+    }
+
+    .tab {
+        width: 268px;
+        font-size: 18px;
+    }
+
+    .active-tab {
+        width: 268px;
+        height: 55px;
+    }
+
+    .active-content .title {
+        font-size: 35px;
+        margin-bottom: 26px;
+    }
+
+    .active-content ul li {
+        font-size: 24px;
+        line-height: 44px;
+    }
+
+    .activecontactdiv img {
+        width: 525px;
+        height: 326px;
+    }
+
+    .aboutSection {
+        padding: 53px 80px 60px;
     }
 
     .aboutCards {
-        gap: 40px;
+        gap: 42px;
+        margin-top: 98px;
     }
 
+    .gradientBar {
+        height: 134px;
+        padding-left: 335px;
+    }
 
+    .profileImg {
+        width: 307px;
+        height: 341px;
+        bottom: -30px;
+    }
 
+    .textBox {
+        padding-left: 335px;
+        padding-top: 17px;
+    }
 
+    .name {
+        font-size: 34px;
+    }
+
+    .role {
+        font-size: 23px;
+    }
+
+    .desc {
+        font-size: 15px;
+    }
+
+    .clientsSection {
+        padding: 28px 0px 29px 69px;
+        gap: 32px;
+    }
 
     .clientsHeading {
-        font-size: 64px;
+        font-size: 61px;
+    }
+
+    .logos {
+        gap: 38px;
+    }
+
+    .logos img {
+        height: 113px;
+    }
+
+    .footer-top {
+        padding: 27px 66px 34px;
+    }
+
+    .footer-nav {
+        gap: 83px;
+    }
+
+    .footer-nav a {
+        font-size: 21px;
+    }
+
+    .footer-contact {
+        gap: 42px;
+        padding-bottom: 36px;
+    }
+
+    .footer-contact-item {
+        gap: 21px;
+    }
+
+    .footer-label {
+        font-size: 20px;
+    }
+
+    .footer-value {
+        font-size: 25px;
+    }
+
+    .footer-bottom {
+        height: 53px;
+    }
+
+    .footer-bottom p {
+        font-size: 19px;
+    }
+
+    .logonavbar {
+        height: 49px;
+    }
+
+    .arrow {
+        width: 21px;
+        height: 21px;
+    }
+
+    .footer-logo {
+        width: 255px;
+    }
+
+    .footer-icon {
+        width: 59px;
+        height: 59px;
     }
 }
 
