@@ -157,9 +157,7 @@ body {
 }
 
 /* Client logos hover effect */
-.logos img {
-    filter: grayscale(1) opacity(0.65);
-}
+
 
 .logos img:hover {
     transform: scale(1.06);
@@ -238,6 +236,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .nav-links a.active {
@@ -338,7 +338,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 550px;
+    min-height: clamp(420px, 28.6vw, 550px);
     border-radius: 12px;
     box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.12);
 }
@@ -348,10 +348,12 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 90%;
+    width: min(90%, 100%);
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 clamp(8px, 1.5vw, 16px);
 }
 
 .quote-text {
@@ -365,16 +367,19 @@ body {
     text-transform: lowercase;
     text-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.75);
     color: #FFFFFF;
-    margin-bottom: 60px;
-    padding: 50px;
+    margin-bottom: clamp(24px, 3.1vw, 60px);
+    padding: clamp(12px, 2vw, 32px);
     width: 100%;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
 }
 
 .quote-author {
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-weight: 700;
     font-size: 30px;
-    line-height: 55px;
+    line-height: 40px;
     letter-spacing: 0.1em;
     text-align: center;
     vertical-align: middle;
@@ -382,11 +387,14 @@ body {
     color: #EEDD69;
     text-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.65);
     position: absolute;
-    bottom: 30px;
+    bottom: clamp(16px, 1.56vw, 30px);
+    max-width: 100%;
+    padding: 0 clamp(12px, 2vw, 24px);
 }
 
 .next-level-text {
     flex: 1;
+    min-width: 0;
 }
 
 .next-level-subtitle {
@@ -424,7 +432,17 @@ body {
 .logos-row {
     display: flex;
     align-items: center;
-    gap: 60px;
+    flex-wrap: wrap;
+    gap: clamp(24px, 3.1vw, 60px);
+}
+
+.logos-row img {
+    height: auto;
+    width: auto;
+    max-height: clamp(55px, 5.2vw, 100px);
+    max-width: min(100%, clamp(140px, 23vw, 442px));
+    object-fit: contain;
+    flex-shrink: 1;
 }
 
 /* What We Do Section */
@@ -660,12 +678,15 @@ body {
 
 
 .clientsSection {
-    height: 204px;
-    padding: 36px 0px 36px 82px;
+    min-height: 204px;
+    height: auto;
+    padding: 36.99px 0px 33.01px 82px;
     background: linear-gradient(148.76deg, #3761B7 19.5%, #1D3A75 99.29%);
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 40px;
+    flex-wrap: nowrap;
 }
 
 /* HEADING */
@@ -673,6 +694,8 @@ body {
     font-size: 72px;
     font-weight: 600;
     color: #fff;
+    line-height: 1.1;
+    flex-shrink: 0;
 }
 
 .clientsHeading span {
@@ -682,14 +705,19 @@ body {
 /* LOGOS */
 .logos {
     display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
     gap: 56px;
+    flex: 1;
+    min-width: 0;
 }
 
 .logos img {
     height: 134px;
-    max-width: 100%;
     width: auto;
     object-fit: contain;
+    flex-shrink: 1;
 }
 
 
@@ -804,8 +832,16 @@ body {
         padding: 15.25px 120px 14.75px;
     }
 
+    .hero {
+        padding: 200px 20px 120px;
+    }
+
     .next-level-container {
         padding: 52px 100px 50px 100px;
+    }
+
+    .logos {
+        gap: 20px
     }
 }
 
@@ -813,6 +849,85 @@ body {
 @media (max-width: 1750px) {
     .aboutSection {
         padding: 63px 60px 71px;
+    }
+
+    .hero-title {
+        font-size: 80px;
+        margin-bottom: 40px;
+    }
+
+    .hero-subtitle {
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+
+    .btn-show-me {
+        font-size: 22px;
+    }
+
+    .quote-text {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .quote-author {
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    .footer-value {
+        font-size: 28px;
+    }
+
+    .next-level-subtitle,
+    .aboutTag {
+        font-size: 24px;
+    }
+
+    .next-level-title,
+    .services-title,
+    .active-content .title,
+    .aboutHeading {
+        font-size: 50px;
+    }
+
+    .next-level-desc {
+        font-size: 18px;
+    }
+
+    .services-subtitle,
+    .active-content ul li {
+        font-size: 24px;
+    }
+
+    .name {
+        font-size: 36px;
+
+    }
+
+    .role,
+    .footer-bottom p {
+        font-size: 20px;
+    }
+
+    .desc {
+        font-size: 16px;
+    }
+
+    .clientsHeading {
+        font-size: 66px;
+    }
+
+    .logos img {
+        height: 110px;
+    }
+
+    .footer-nav a {
+        font-size: 24px;
+    }
+
+    .footer-label {
+        font-size: 22px;
     }
 
     .footer-top,
@@ -831,42 +946,228 @@ body {
     .aboutCards {
         gap: 40px;
     }
+
+
+
+
+
+    .clientsHeading {
+        font-size: 64px;
+    }
+
+
+
 }
 
-/* 1440px */
-@media (max-width: 1440px) {
+@media (max-width: 1480px) {
+
+    /* Navbar */
     .navbar {
-        padding: 15px 60px;
+        padding: 11px 112px 11px;
+    }
+
+    .logonavbar {
+        height: 47.27px;
+    }
+
+    .nav-links {
+        gap: 58px;
+    }
+
+    .nav-links a {
+        font-size: 15px;
+    }
+
+    /* Hero Section */
+    .hero {
+        padding: 170px 20px 102px;
+    }
+
+    .hero-subtitle {
+        font-size: 21px;
+        margin-bottom: 40px;
+    }
+
+    .hero-title {
+        font-size: 66px;
+        line-height: 76px;
+        margin-bottom: 56px;
+    }
+
+    /* Button */
+    .btn-show-me {
+        width: 272px;
+        height: 68px;
+        border-radius: 12.55px;
+        font-size: 25px;
+    }
+
+    /* Arrow Icon */
+    .arrow {
+        width: 20px;
+        height: 20px;
     }
 
     .next-level-container {
-        padding: 50px 60px;
+        padding: 39px 106px 47px 82px;
+    }
+
+    .quote-text {
+        font-size: 25px;
+        line-height: 36px;
+    }
+
+    .quote-author {
+        font-size: 22px;
+        line-height: 40px;
+    }
+
+    .next-level-container {
+        padding: 39px 106px 47px 82px;
+    }
+
+    .next-level-image-wrapper {
+        width: 333.13px;
+    }
+
+    .next-level-subtitle {
+        font-size: 18.76px;
+        margin-bottom: 16.5px;
+    }
+
+    .next-level-title {
+        font-size: 39.02px;
+        margin-bottom: 28px;
+    }
+
+    .next-level-desc {
+        font-size: 15px;
+        margin-bottom: 28px;
     }
 
     .what-we-do {
-        padding: 60px 60px 80px;
+        padding: 50px 136px 63px;
+    }
+
+    .services-subtitle,
+    .aboutTag {
+        font-size: 18.76px;
+        margin-bottom: 16.5px;
+    }
+
+    .services-title,
+    .aboutHeading {
+        font-size: 39px;
+        margin-bottom: 40px;
+    }
+
+    .tabs-container {
+        gap: 58.52px;
+        /* assuming this is spacing between tabs */
+        padding: 4.5px 3.5px;
+        margin-bottom: 36px;
     }
 
     .aboutSection {
-        padding: 60px 60px;
+        padding: 47px 70px 53px;
+    }
+
+    .active-tab {
+        width: 260px;
+        height: 48px;
+    }
+
+    .active-content .title {
+        font-size: 25px;
+        margin-bottom: 23px;
+    }
+
+    .active-content ul li {
+        font-size: 23px;
+        line-height: 40px;
+    }
+
+    .activecontactdiv img {
+        width: 465.1px;
+        height: 288.86px;
+    }
+
+    .aboutSection {
+        padding: 47px 70px 53px;
+    }
+
+
+    .gradientBar {
+        height: 118.55px;
+    }
+
+    .name {
+        font-size: 30px;
+    }
+
+    .role {
+        font-size: 22.51px;
+    }
+
+    .desc {
+        font-size: 13.51px;
+    }
+
+    .clientsHeading {
+        font-size: 54.02px;
     }
 
     .clientsSection {
-        padding: 36px 40px 36px 60px;
-    }
-
-    .gradientBar {
-        padding-left: 320px;
+        min-height: 153.06px;
+        padding: 23px 0px 26px 61px;
     }
 
     .profileImg {
-        width: 300px;
-        height: 340px;
-        bottom: -20px;
+        width: 272.05px;
+        height: 302.37px;
     }
 
-    .textBox {
-        padding-left: 320px;
+    .logos img {
+        height: 100px;
+    }
+
+    .footer-logo {
+        width: 242px;
+    }
+
+    .footer-nav a {
+        font-size: 18.95px;
+        line-height: 22.7px;
+    }
+
+    .footer-nav {
+        gap: 73px;
+    }
+
+    .footer-contact-item {
+        gap: 18.76px;
+    }
+
+    .footer-label,
+    .footer-bottom p {
+        font-size: 18.01px;
+    }
+
+    .footer-value {
+        font-size: 22.51px;
+    }
+
+    .footer-contact {
+        gap: 30px;
+    }
+
+    .footer-icon {
+        width: 56px;
+        height: 56px;
+    }
+
+    .footer-bottom {
+        height: 46.52px;
     }
 }
 
@@ -905,6 +1206,19 @@ body {
     .textBox {
         padding-left: 360px;
     }
+
+    .clientsSection {
+        padding: 30px 36px;
+        gap: 28px;
+    }
+
+    .clientsHeading {
+        font-size: 52px;
+    }
+
+    .logos {
+        gap: 32px;
+    }
 }
 
 /* 1250px */
@@ -923,12 +1237,17 @@ body {
         height: 320px;
     }
 
-    .logos {
-        gap: 30px;
+    .clientsSection {
+        padding: 28px 32px;
+        gap: 24px;
     }
 
-    .logos img {
-        height: 110px;
+    .clientsHeading {
+        font-size: 48px;
+    }
+
+    .logos {
+        gap: 30px;
     }
 }
 
@@ -987,9 +1306,6 @@ body {
     }
 
     .quote-text {
-        font-size: 26px;
-        line-height: 36px;
-        padding: 30px;
         margin-bottom: 0px;
         text-shadow: none;
     }
@@ -1056,20 +1372,23 @@ body {
     /* Clients */
     .clientsSection {
         flex-direction: column;
-        height: auto;
-        padding: 40px 20px;
-        gap: 25px;
+        flex-wrap: wrap;
+        min-height: auto;
+        padding: 40px 24px;
+        gap: 28px;
         text-align: center;
+    }
+
+    .clientsHeading {
+        font-size: 44px;
+        white-space: normal;
     }
 
     .logos {
         flex-wrap: wrap;
         justify-content: center;
-        gap: 25px;
-    }
-
-    .logos img {
-        height: 90px;
+        width: 100%;
+        gap: 28px 32px;
     }
 
     /* Footer */
@@ -1114,6 +1433,19 @@ body {
 
     .active-tab {
         width: 280px;
+    }
+
+    .clientsSection {
+        padding: 36px 20px;
+        gap: 24px;
+    }
+
+    .clientsHeading {
+        font-size: 40px;
+    }
+
+    .logos {
+        gap: 24px 28px;
     }
 }
 
@@ -1162,12 +1494,17 @@ body {
         font-size: 16px;
     }
 
+    .clientsSection {
+        padding: 32px 20px;
+        gap: 22px;
+    }
+
     .clientsHeading {
         font-size: 42px;
     }
 
-    .logos img {
-        height: 70px;
+    .logos {
+        gap: 20px 24px;
     }
 
     .footer-logo {
@@ -1229,6 +1566,19 @@ body {
     .what-we-do {
         padding: 40px 20px;
     }
+
+    .clientsSection {
+        padding: 28px 18px;
+        gap: 20px;
+    }
+
+    .clientsHeading {
+        font-size: 36px;
+    }
+
+    .logos {
+        gap: 18px 20px;
+    }
 }
 
 /* 500px */
@@ -1247,9 +1597,7 @@ body {
     }
 
     .quote-text {
-        font-size: 20px;
-        line-height: 28px;
-        padding: 20px;
+        padding: 16px;
     }
 
     .profileImg {
@@ -1275,6 +1623,19 @@ body {
     .footer-bottom p {
         font-size: 14px;
     }
+
+    .clientsSection {
+        padding: 24px 16px;
+        gap: 18px;
+    }
+
+    .clientsHeading {
+        font-size: 32px;
+    }
+
+    .logos {
+        gap: 16px 18px;
+    }
 }
 
 /* 440px */
@@ -1282,6 +1643,14 @@ body {
     .hero-title {
         font-size: 30px;
         line-height: 36px;
+    }
+
+    .clientsHeading {
+        font-size: 30px;
+    }
+
+    .logos {
+        gap: 14px 16px;
     }
 }
 
@@ -1294,6 +1663,14 @@ body {
     .hero-subtitle {
         font-size: 16px;
     }
+
+    .clientsSection {
+        padding: 22px 14px;
+    }
+
+    .clientsHeading {
+        font-size: 28px;
+    }
 }
 
 /* 400px */
@@ -1303,8 +1680,17 @@ body {
         line-height: 34px;
     }
 
-    .logos img {
-        height: 60px;
+    .clientsSection {
+        padding: 22px 14px;
+        gap: 16px;
+    }
+
+    .clientsHeading {
+        font-size: 26px;
+    }
+
+    .logos {
+        gap: 12px 14px;
     }
 }
 
@@ -1321,6 +1707,10 @@ body {
 
     .profileImg {
         height: 220px;
+    }
+
+    .clientsHeading {
+        font-size: 26px;
     }
 }
 
@@ -1342,6 +1732,19 @@ body {
     .footer-bottom p {
         font-size: 12px;
     }
+
+    .clientsSection {
+        padding: 20px 12px;
+        gap: 14px;
+    }
+
+    .clientsHeading {
+        font-size: 24px;
+    }
+
+    .logos {
+        gap: 10px 12px;
+    }
 }
 
 /* 320px */
@@ -1351,8 +1754,17 @@ body {
         line-height: 28px;
     }
 
-    .logos img {
-        height: 50px;
+    .clientsSection {
+        padding: 18px 10px;
+        gap: 12px;
+    }
+
+    .clientsHeading {
+        font-size: 22px;
+    }
+
+    .logos {
+        gap: 8px 10px;
     }
 
     .footer-bottom p {

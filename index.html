@@ -13,7 +13,7 @@
     <!-- Header -->
     <header class="navbar">
         <a href="#" class="logo-link">
-            <img src="Images/logo.svg" alt="Key-East Logo">
+            <img src="Images/logo.svg" class="logonavbar" alt="Key-East Logo">
         </a>
         <div class="menu-toggle" id="mobile-menu">
             <span class="bar"></span>
@@ -36,7 +36,7 @@
             </h1>
             <a href="#" class="btn-show-me">
                 Show me
-                <img src="Images/arrow.svg" alt="Arrow">
+                <img src="Images/arrow.svg" class="arrow" alt="Arrow">
             </a>
         </div>
     </section>
@@ -208,7 +208,7 @@
 
         // Intersection Observer for Scroll Animations
         const revealElements = document.querySelectorAll('.reveal');
-        
+
         const revealObserver = new IntersectionObserver((entries, observer) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
