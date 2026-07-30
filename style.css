@@ -29,8 +29,16 @@
 
 @font-face {
     font-family: 'Plus Jakarta Sans';
-    src: url('Fonts/loos-normal-regular.otf') format('opentype');
+    src: url('Fonts/PlusJakartaSans-ExtraBold.ttf') format('truetype');
     font-weight: 800;
+    /* ExtraBold */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'loos-normal-regular';
+    src: url('Fonts/loos-normal-regular.otf') format('opentype');
+    font-weight: 700;
     /* ExtraBold */
     font-style: normal;
 }
@@ -534,7 +542,7 @@ body {
 
 /* TITLE */
 .active-content .title {
-    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-family: 'loos-normal-regular', sans-serif;
     font-weight: 700;
     font-size: 52px;
     line-height: 1.2;
@@ -1549,6 +1557,11 @@ body {
 
     .next-level-container {
         padding: 39px 106px 47px 82px;
+        gap: 44px;
+    }
+
+    .next-level-image-wrapper {
+        width: 333.13px;
     }
 
     .quote-text {
@@ -1559,14 +1572,6 @@ body {
     .quote-author {
         font-size: 22px;
         line-height: 40px;
-    }
-
-    .next-level-container {
-        padding: 39px 106px 47px 82px;
-    }
-
-    .next-level-image-wrapper {
-        width: 333.13px;
     }
 
     .next-level-subtitle {
@@ -1601,19 +1606,19 @@ body {
     }
 
     .tabs-container {
-        gap: 58.52px;
-        /* assuming this is spacing between tabs */
+        height: 64px;
         padding: 4.5px 3.5px;
         margin-bottom: 36px;
     }
 
-    .aboutSection {
-        padding: 47px 70px 53px;
+    .tab {
+        width: 260px;
+        font-size: 17px;
     }
 
     .active-tab {
         width: 260px;
-        height: 48px;
+        height: 52px;
     }
 
     .active-content .title {
@@ -1635,9 +1640,26 @@ body {
         padding: 47px 70px 53px;
     }
 
+    .aboutCards {
+        gap: 52px;
+        margin-top: 90px;
+    }
 
     .gradientBar {
         height: 118.55px;
+        padding-left: 295px;
+    }
+
+    .profileImg {
+        width: 272.05px;
+        height: 302.37px;
+        bottom: -28px;
+        margin-left: 8px;
+    }
+
+    .textBox {
+        padding-left: 295px;
+        padding-top: 17px;
     }
 
     .name {
@@ -1652,26 +1674,34 @@ body {
         font-size: 13.51px;
     }
 
+    .clientsSection {
+        min-height: 153.06px;
+        padding: 23px 0px 26px 61px;
+        gap: 36px;
+    }
+
     .clientsHeading {
         font-size: 54.02px;
     }
 
-    .clientsSection {
-        min-height: 153.06px;
-        padding: 23px 0px 26px 61px;
-    }
-
-    .profileImg {
-        width: 272.05px;
-        height: 302.37px;
+    .logos {
+        gap: 34px;
     }
 
     .logos img {
         height: 100px;
     }
 
+    .footer-top {
+        padding: 27px 72px 34px;
+    }
+
     .footer-logo {
         width: 242px;
+    }
+
+    .footer-nav {
+        gap: 73px;
     }
 
     .footer-nav a {
@@ -1679,12 +1709,18 @@ body {
         line-height: 22.7px;
     }
 
-    .footer-nav {
-        gap: 73px;
+    .footer-contact {
+        gap: 30px;
+        padding-bottom: 34px;
     }
 
     .footer-contact-item {
         gap: 18.76px;
+    }
+
+    .footer-icon {
+        width: 56px;
+        height: 56px;
     }
 
     .footer-label,
@@ -1696,102 +1732,509 @@ body {
         font-size: 22.51px;
     }
 
-    .footer-contact {
-        gap: 30px;
-    }
-
-    .footer-icon {
-        width: 56px;
-        height: 56px;
-    }
-
     .footer-bottom {
         height: 46.52px;
     }
 }
 
-/* 1320px */
+/* 1320px — ~11% smaller than 1480 */
 @media (max-width: 1320px) {
-    .hero-title {
-        font-size: 72px;
-        line-height: 84px;
+
+    /* Navbar */
+    .navbar {
+        padding: 11px 96px 11px;
     }
 
+    .logonavbar {
+        height: 44px;
+    }
+
+    .nav-links {
+        gap: 52px;
+    }
+
+    .nav-links a {
+        font-size: 14.5px;
+    }
+
+    /* Hero */
+    .hero {
+        padding: 162px 20px 96px;
+    }
+
+    .hero-subtitle {
+        font-size: 20px;
+        margin-bottom: 38px;
+    }
+
+    .hero-title {
+        font-size: 62px;
+        line-height: 72px;
+        margin-bottom: 54px;
+    }
+
+    .btn-show-me {
+        height: 66px;
+        font-size: 23px;
+    }
+
+    .arrow {
+        width: 19px;
+        height: 19px;
+    }
+
+    /* Next-Level */
     .next-level-container {
+        padding: 37px 96px 44px 76px;
         gap: 40px;
+    }
+
+    .next-level-bg {
+        width: 460px;
+        height: 460px;
+    }
+
+    .next-level-image-wrapper {
+        width: auto;
+        min-height: 400px;
+    }
+
+    .quote-text {
+        font-size: 23px;
+        line-height: 34px;
+    }
+
+    .quote-author {
+        font-size: 20px;
+        line-height: 38px;
+    }
+
+    .next-level-subtitle,
+    .services-subtitle,
+    .aboutTag {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .next-level-title,
+    .services-title,
+    .aboutHeading {
+        font-size: 37px;
+    }
+
+    .next-level-title {
+        margin-bottom: 26px;
+    }
+
+    .services-title {
+        margin-bottom: 38px;
+    }
+
+    .aboutHeading {
+        margin-bottom: 38px;
+    }
+
+    .next-level-desc {
+        font-size: 14.5px;
+        margin-bottom: 26px;
+    }
+
+    /* Services */
+    .what-we-do {
+        padding: 48px 118px 60px;
+    }
+
+    .tabs-container {
+        height: 62px;
+        margin-bottom: 34px;
+    }
+
+    .tab {
+        width: 252px;
+        font-size: 16.5px;
+    }
+
+    .active-tab {
+        width: 252px;
+        height: 50px;
+    }
+
+    .active-content .title {
+        font-size: 24px;
+        margin-bottom: 21px;
+    }
+
+    .active-content ul li {
+        font-size: 22px;
+        line-height: 38px;
+    }
+
+    .activecontactdiv img {
+        width: 440px;
+        height: 272px;
+    }
+
+    /* About Cards — switch to stacked card layout but keep side-by-side via max-width clamp */
+    .aboutSection {
+        padding: 45px 62px 50px;
     }
 
     .aboutCards {
         flex-direction: column;
-        gap: 80px;
-        margin-top: 80px;
+        gap: 75px;
+        margin-top: 75px;
     }
 
     .aboutCard {
-        max-width: 800px;
+        max-width: 760px;
         margin: 0 auto;
     }
 
     .profileImg {
-        width: 330px;
-        height: 380px;
-        bottom: -30px;
+        width: 295px;
+        height: 330px;
+        bottom: -26px;
+        margin-left: 9px;
     }
 
     .gradientBar {
-        padding-left: 360px;
+        height: 126px;
+        padding-left: 320px;
     }
 
     .textBox {
-        padding-left: 360px;
+        padding-left: 320px;
+        padding-top: 18px;
     }
 
+    .name {
+        font-size: 31px;
+    }
+
+    .role {
+        font-size: 22px;
+    }
+
+    .desc {
+        font-size: 14px;
+    }
+
+    /* Clients */
     .clientsSection {
-        padding: 30px 36px;
-        gap: 28px;
-    }
-
-    .clientsHeading {
-        font-size: 52px;
-    }
-
-    .logos {
+        min-height: auto;
+        padding: 28px 0px 28px 56px;
         gap: 32px;
     }
-}
-
-/* 1250px */
-@media (max-width: 1250px) {
-
-    .next-level-title,
-    .services-title,
-    .aboutHeading,
-    .active-content .title {
-        font-size: 45px;
-        line-height: 1.1;
-    }
-
-    .activecontactdiv img {
-        width: 500px;
-        height: 320px;
-    }
-
-    .clientsSection {
-        padding: 28px 32px;
-        gap: 24px;
-    }
 
     .clientsHeading {
-        font-size: 48px;
+        font-size: 50px;
     }
 
     .logos {
         gap: 30px;
     }
+
+    .logos img {
+        height: 92px;
+    }
+
+    /* Footer */
+    .footer-top {
+        padding: 27px 62px 34px;
+    }
+
+    .footer-logo {
+        width: 230px;
+    }
+
+    .footer-nav {
+        gap: 66px;
+    }
+
+    .footer-nav a {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .footer-contact {
+        gap: 28px;
+        padding-bottom: 32px;
+    }
+
+    .footer-contact-item {
+        gap: 17px;
+    }
+
+    .footer-icon {
+        width: 53px;
+        height: 53px;
+    }
+
+    .footer-label,
+    .footer-bottom p {
+        font-size: 17px;
+    }
+
+    .footer-value {
+        font-size: 21px;
+    }
+
+    .footer-bottom {
+        height: 45px;
+    }
 }
 
-/* 1000px (Mobile Navbar Transition) */
+/* 1250px — ~16% smaller than 1480 */
+@media (max-width: 1250px) {
+
+    /* Navbar */
+    .navbar {
+        padding: 11px 86px 11px;
+    }
+
+    .logonavbar {
+        height: 42px;
+    }
+
+    .nav-links {
+        gap: 48px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    /* Hero */
+    .hero {
+        padding: 156px 20px 92px;
+    }
+
+    .hero-subtitle {
+        font-size: 19px;
+        margin-bottom: 36px;
+        letter-spacing: 0.24em;
+    }
+
+    .hero-title {
+        font-size: 58px;
+        line-height: 68px;
+        margin-bottom: 52px;
+    }
+
+    .btn-show-me {
+        height: 64px;
+        padding: 0 40px;
+        width: auto;
+        font-size: 22px;
+    }
+
+    .arrow {
+        width: 18px;
+        height: 18px;
+    }
+
+    /* Next-Level */
+    .next-level-container {
+        padding: 35px 86px 42px 70px;
+        gap: 36px;
+    }
+
+    .next-level-bg {
+        width: 420px;
+        height: 420px;
+    }
+
+    .next-level-image-wrapper {
+        min-height: 380px;
+    }
+
+    .quote-text {
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    .quote-author {
+        font-size: 19px;
+        line-height: 36px;
+    }
+
+    .next-level-subtitle,
+    .services-subtitle,
+    .aboutTag {
+        font-size: 17px;
+        margin-bottom: 14px;
+    }
+
+    .next-level-title,
+    .services-title,
+    .aboutHeading,
+    .active-content .title {
+        font-size: 35px;
+        line-height: 1.15;
+    }
+
+    .next-level-title {
+        margin-bottom: 24px;
+    }
+
+    .services-title {
+        margin-bottom: 36px;
+    }
+
+    .aboutHeading {
+        margin-bottom: 36px;
+    }
+
+    .next-level-desc {
+        font-size: 14px;
+        line-height: 155%;
+        margin-bottom: 24px;
+    }
+
+    /* Services */
+    .what-we-do {
+        padding: 46px 102px 58px;
+    }
+
+    .tabs-container {
+        height: 60px;
+        margin-bottom: 32px;
+    }
+
+    .tab {
+        width: 244px;
+        font-size: 16px;
+    }
+
+    .active-tab {
+        width: 244px;
+        height: 48px;
+    }
+
+    .active-content .title {
+        margin-bottom: 20px;
+    }
+
+    .active-content ul li {
+        font-size: 21px;
+        line-height: 36px;
+    }
+
+    .activecontactdiv img {
+        width: 420px;
+        height: 260px;
+    }
+
+    /* About Cards */
+    .aboutSection {
+        padding: 43px 54px 48px;
+    }
+
+    .aboutCards {
+        gap: 70px;
+        margin-top: 70px;
+    }
+
+    .aboutCard {
+        max-width: 700px;
+    }
+
+    .profileImg {
+        width: 275px;
+        height: 308px;
+        bottom: -24px;
+    }
+
+    .gradientBar {
+        height: 120px;
+        padding-left: 300px;
+    }
+
+    .textBox {
+        padding-left: 300px;
+        padding-top: 17px;
+    }
+
+    .name {
+        font-size: 29px;
+    }
+
+    .role {
+        font-size: 21px;
+    }
+
+    .desc {
+        font-size: 13.5px;
+    }
+
+    /* Clients */
+    .clientsSection {
+        padding: 26px 0px 26px 50px;
+        gap: 28px;
+    }
+
+    .clientsHeading {
+        font-size: 47px;
+    }
+
+    .logos {
+        gap: 26px;
+    }
+
+    .logos img {
+        height: 86px;
+    }
+
+    /* Footer */
+    .footer-top {
+        padding: 27px 54px 34px;
+    }
+
+    .footer-logo {
+        width: 220px;
+    }
+
+    .footer-nav {
+        gap: 60px;
+    }
+
+    .footer-nav a {
+        font-size: 17px;
+        line-height: 21px;
+    }
+
+    .footer-contact {
+        gap: 26px;
+        padding-bottom: 30px;
+    }
+
+    .footer-contact-item {
+        gap: 16px;
+    }
+
+    .footer-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .footer-label,
+    .footer-bottom p {
+        font-size: 16px;
+    }
+
+    .footer-value {
+        font-size: 20px;
+    }
+
+    .footer-bottom {
+        height: 43px;
+    }
+}
+
+/* 1000px — Mobile Navbar + Column Layout Transition */
 @media (max-width: 1000px) {
+
+    /* === MOBILE MENU ENABLE === */
     .menu-toggle {
         display: flex;
     }
@@ -1822,15 +2265,59 @@ body {
         font-size: 18px;
     }
 
-    /* Container adjustments */
+    /* === NAVBAR === */
+    .navbar {
+        padding: 12px 30px;
+    }
+
+    .logonavbar {
+        height: 40px;
+    }
+
+    /* === HERO === */
+    .hero {
+        padding: 150px 20px 88px;
+    }
+
+    .hero-subtitle {
+        font-size: 18px;
+        margin-bottom: 34px;
+        letter-spacing: 0.22em;
+    }
+
+    .hero-title {
+        font-size: 54px;
+        line-height: 64px;
+        margin-bottom: 50px;
+    }
+
+    .btn-show-me {
+        height: 62px;
+        padding: 0 36px;
+        font-size: 21px;
+    }
+
+    .arrow {
+        width: 18px;
+        height: 18px;
+    }
+
+    /* === NEXT-LEVEL — COLUMN SWITCH === */
     .next-level-container {
         flex-direction: column;
         text-align: center;
+        padding: 36px 28px 40px;
+        gap: 32px;
     }
 
     .next-level-bg {
-        width: 400px;
-        height: 400px;
+        width: 380px;
+        height: 380px;
+    }
+
+    .next-level-image-wrapper {
+        width: 100%;
+        min-height: 420px;
     }
 
     .quote-box {
@@ -1845,24 +2332,100 @@ body {
     }
 
     .quote-text {
+        font-size: 20px;
+        line-height: 30px;
         margin-bottom: 0px;
         text-shadow: none;
+        padding: 24px;
     }
 
     .quote-author {
         position: relative;
         bottom: auto;
+        font-size: 18px;
+        line-height: 32px;
         text-shadow: none;
+        padding: 0 20px 20px;
+    }
+
+    .next-level-text {
+        width: 100%;
+    }
+
+    .next-level-subtitle,
+    .services-subtitle,
+    .aboutTag {
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+
+    .next-level-title,
+    .services-title,
+    .aboutHeading,
+    .active-content .title {
+        font-size: 32px;
+        line-height: 1.2;
+    }
+
+    .next-level-title {
+        margin-bottom: 20px;
+    }
+
+    .services-title {
+        margin-bottom: 32px;
+    }
+
+    .aboutHeading {
+        margin-bottom: 32px;
+    }
+
+    .next-level-desc {
+        font-size: 15px;
+        line-height: 160%;
+        margin-bottom: 22px;
     }
 
     .logos-row {
         justify-content: center;
+        gap: 24px;
+    }
+
+    .logos-row img {
+        max-height: 60px;
+        max-width: 180px;
+    }
+
+    /* === SERVICES / WHAT WE DO === */
+    .what-we-do {
+        padding: 40px 28px 50px;
+    }
+
+    .tabs-container {
+        height: auto;
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto 28px auto;
+        flex-wrap: wrap;
+        padding: 5px;
+        gap: 4px;
+    }
+
+    .tab {
+        width: calc(33.333% - 4px);
+        min-width: 0;
+        font-size: 15px;
+        height: 46px;
+    }
+
+    .active-tab {
+        width: calc(33.333% - 4px);
+        height: 46px;
     }
 
     .activecontactdiv {
         flex-direction: column-reverse;
-        padding: 30px;
-        gap: 25px;
+        padding: 24px;
+        gap: 22px;
     }
 
     .active-content {
@@ -1870,56 +2433,87 @@ body {
         text-align: center;
     }
 
+    .active-content .title {
+        margin-bottom: 18px;
+    }
+
     .active-content ul li {
-        font-size: 20px;
-        line-height: 38px;
+        font-size: 18px;
+        line-height: 34px;
     }
 
     .activecontactdiv img {
         width: 100%;
         height: auto;
-        max-width: 600px;
+        max-width: 560px;
+        margin: 0 auto;
     }
 
-    /* About cards details for tablet */
+    /* === ABOUT CARDS — STACKED MOBILE LAYOUT === */
+    .aboutSection {
+        padding: 40px 28px 48px;
+    }
+
+    .aboutCards {
+        flex-direction: column;
+        gap: 56px;
+        margin-top: 48px;
+    }
+
     .aboutCard {
-        max-width: 600px;
+        max-width: 560px;
+        margin: 0 auto;
+        width: 100%;
     }
 
     .profileImg {
         position: relative;
         width: 100%;
-        height: 400px;
+        height: 380px;
         bottom: 0;
         margin-left: 0;
-        margin-bottom: 15px;
-        border-radius: 10px;
+        margin-bottom: 0;
+        border-radius: 10px 10px 0 0;
+        display: block;
     }
 
     .gradientBar {
-        padding: 25px;
+        padding: 22px 20px;
         height: auto;
         text-align: center;
-        border-radius: 10px 10px 0 0;
+        border-radius: 0;
     }
 
     .textBox {
-        padding: 20px;
+        padding: 18px 20px 20px;
         text-align: center;
     }
 
-    /* Clients */
+    .name {
+        font-size: 28px;
+    }
+
+    .role {
+        font-size: 19px;
+    }
+
+    .desc {
+        font-size: 14px;
+    }
+
+    /* === CLIENTS — COLUMN + CENTER === */
     .clientsSection {
         flex-direction: column;
         flex-wrap: wrap;
         min-height: auto;
-        padding: 40px 24px;
-        gap: 28px;
+        padding: 36px 24px;
+        gap: 26px;
         text-align: center;
+        justify-content: center;
     }
 
     .clientsHeading {
-        font-size: 44px;
+        font-size: 42px;
         white-space: normal;
     }
 
@@ -1927,26 +2521,49 @@ body {
         flex-wrap: wrap;
         justify-content: center;
         width: 100%;
-        gap: 28px 32px;
+        gap: 24px 28px;
     }
 
-    /* Footer */
+    .logos img {
+        height: 80px;
+    }
+
+    /* === FOOTER — COLUMN LAYOUT === */
     .footer-top {
         flex-direction: column;
-        gap: 25px;
-        padding: 30px 20px;
+        gap: 22px;
+        padding: 28px 24px 30px;
+    }
+
+    .footer-logo {
+        width: 210px;
     }
 
     .footer-nav {
         flex-direction: column;
-        gap: 15px;
+        gap: 14px;
         align-items: center;
+    }
+
+    .footer-nav a {
+        font-size: 16px;
+        line-height: 20px;
     }
 
     .footer-contact {
         flex-direction: column;
-        gap: 20px;
-        padding: 20px;
+        gap: 18px;
+        padding: 18px 24px 26px;
+        padding-bottom: 26px;
+    }
+
+    .footer-contact-item {
+        gap: 14px;
+    }
+
+    .footer-icon {
+        width: 46px;
+        height: 46px;
     }
 
     .footer-divider {
@@ -1954,125 +2571,602 @@ body {
         height: 1px;
         border-top: 1px solid #0000001F;
         transform: none;
-        margin: 5px 0;
-    }
-}
-
-/* 900px */
-@media (max-width: 900px) {
-    .hero-title {
-        font-size: 60px;
-        line-height: 72px;
+        margin: 4px 0;
     }
 
-    .tab {
-        padding: 0 40px;
+    .footer-label,
+    .footer-bottom p {
+        font-size: 15px;
+    }
+
+    .footer-value {
         font-size: 18px;
     }
 
-    .active-tab {
-        width: 280px;
-    }
-
-    .clientsSection {
-        padding: 36px 20px;
-        gap: 24px;
-    }
-
-    .clientsHeading {
-        font-size: 40px;
-    }
-
-    .logos {
-        gap: 24px 28px;
+    .footer-bottom {
+        height: 42px;
+        padding: 0 16px;
     }
 }
 
-/* 768px */
-@media (max-width: 768px) {
+/* 900px — ~8% smaller than 1000 baseline */
+@media (max-width: 900px) {
+
+    /* Navbar */
     .navbar {
-        padding: 15px 30px;
+        padding: 12px 24px;
+    }
+
+    .logonavbar {
+        height: 38px;
+    }
+
+    /* Hero */
+    .hero {
+        padding: 142px 18px 82px;
     }
 
     .hero-subtitle {
-        font-size: 22px;
-        letter-spacing: 0.2em;
+        font-size: 17px;
+        margin-bottom: 30px;
     }
 
     .hero-title {
         font-size: 48px;
         line-height: 58px;
+        margin-bottom: 46px;
+    }
+
+    .btn-show-me {
+        height: 60px;
+        padding: 0 32px;
+        font-size: 20px;
+    }
+
+    .arrow {
+        width: 17px;
+        height: 17px;
+    }
+
+    /* Next-level */
+    .next-level-container {
+        padding: 34px 24px 38px;
+        gap: 28px;
+    }
+
+    .next-level-bg {
+        width: 340px;
+        height: 340px;
+    }
+
+    .next-level-image-wrapper {
+        min-height: 380px;
+    }
+
+    .quote-text {
+        font-size: 19px;
+        line-height: 28px;
+        padding: 22px;
+    }
+
+    .quote-author {
+        font-size: 17px;
+        line-height: 30px;
+        padding-bottom: 18px;
+    }
+
+    .next-level-subtitle,
+    .services-subtitle,
+    .aboutTag {
+        font-size: 15px;
+        margin-bottom: 11px;
     }
 
     .next-level-title,
     .services-title,
     .aboutHeading,
     .active-content .title {
-        font-size: 34px;
-        line-height: 42px;
+        font-size: 30px;
+        line-height: 1.2;
+    }
+
+    .next-level-title {
+        margin-bottom: 18px;
+    }
+
+    .services-title {
+        margin-bottom: 30px;
+    }
+
+    .aboutHeading {
+        margin-bottom: 30px;
+    }
+
+    .next-level-desc {
+        font-size: 14.5px;
+        margin-bottom: 20px;
+    }
+
+    .logos-row img {
+        max-height: 54px;
+        max-width: 160px;
+    }
+
+    /* Services */
+    .what-we-do {
+        padding: 38px 24px 48px;
+    }
+
+    .tabs-container {
+        margin-bottom: 26px;
+        max-width: 540px;
+    }
+
+    .tab {
+        font-size: 14.5px;
+        height: 44px;
+    }
+
+    .active-tab {
+        height: 44px;
+    }
+
+    .activecontactdiv {
+        padding: 22px;
+        gap: 20px;
     }
 
     .active-content ul li {
-        font-size: 18px;
+        font-size: 17px;
         line-height: 32px;
     }
 
+    /* About */
+    .aboutSection {
+        padding: 38px 24px 46px;
+    }
+
+    .aboutCards {
+        gap: 50px;
+        margin-top: 44px;
+    }
+
     .profileImg {
-        height: 320px;
+        height: 340px;
     }
 
     .name {
-        font-size: 32px;
+        font-size: 26px;
     }
 
     .role {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .desc {
-        font-size: 16px;
+        font-size: 13.5px;
     }
 
+    /* Clients */
+    .clientsSection {
+        padding: 34px 22px;
+        gap: 24px;
+    }
+
+    .clientsHeading {
+        font-size: 38px;
+    }
+
+    .logos {
+        gap: 22px 26px;
+    }
+
+    .logos img {
+        height: 74px;
+    }
+
+    /* Footer */
+    .footer-top {
+        gap: 20px;
+        padding: 26px 22px 28px;
+    }
+
+    .footer-logo {
+        width: 200px;
+    }
+
+    .footer-nav a {
+        font-size: 15.5px;
+    }
+
+    .footer-contact {
+        gap: 16px;
+        padding: 16px 22px 24px;
+    }
+
+    .footer-icon {
+        width: 44px;
+        height: 44px;
+    }
+
+    .footer-label,
+    .footer-bottom p {
+        font-size: 14.5px;
+    }
+
+    .footer-value {
+        font-size: 17px;
+    }
+
+    .footer-bottom {
+        height: 40px;
+    }
+}
+
+/* 768px — Tablet/Mobile boundary */
+@media (max-width: 768px) {
+
+    /* Navbar */
+    .navbar {
+        padding: 12px 20px;
+    }
+
+    .logonavbar {
+        height: 36px;
+    }
+
+    .nav-links a {
+        font-size: 17px;
+        padding: 18px 0;
+    }
+
+    /* Hero */
+    .hero {
+        padding: 136px 16px 76px;
+    }
+
+    .hero-subtitle {
+        font-size: 16px;
+        margin-bottom: 28px;
+        letter-spacing: 0.2em;
+    }
+
+    .hero-title {
+        font-size: 42px;
+        line-height: 52px;
+        margin-bottom: 42px;
+    }
+
+    .btn-show-me {
+        height: 58px;
+        padding: 0 30px;
+        font-size: 19px;
+        border-radius: 10px;
+    }
+
+    .arrow {
+        width: 16px;
+        height: 16px;
+    }
+
+    /* Next-level */
+    .next-level-container {
+        padding: 32px 20px 36px;
+        gap: 26px;
+    }
+
+    .next-level-bg {
+        width: 300px;
+        height: 300px;
+    }
+
+    .next-level-image-wrapper {
+        min-height: 340px;
+    }
+
+    .quote-text {
+        font-size: 18px;
+        line-height: 27px;
+        padding: 20px;
+    }
+
+    .quote-author {
+        font-size: 16px;
+        line-height: 28px;
+        padding: 0 18px 18px;
+    }
+
+    .next-level-subtitle,
+    .services-subtitle,
+    .aboutTag {
+        font-size: 14px;
+        margin-bottom: 10px;
+        letter-spacing: 0.24em;
+    }
+
+    .next-level-title,
+    .services-title,
+    .aboutHeading,
+    .active-content .title {
+        font-size: 28px;
+        line-height: 1.2;
+    }
+
+    .next-level-title {
+        margin-bottom: 16px;
+    }
+
+    .services-title {
+        margin-bottom: 28px;
+    }
+
+    .aboutHeading {
+        margin-bottom: 28px;
+    }
+
+    .next-level-desc {
+        font-size: 14px;
+        line-height: 160%;
+        margin-bottom: 18px;
+    }
+
+    .logos-row {
+        gap: 20px;
+    }
+
+    .logos-row img {
+        max-height: 48px;
+        max-width: 140px;
+    }
+
+    /* Services */
+    .what-we-do {
+        padding: 36px 20px 44px;
+    }
+
+    .tabs-container {
+        margin-bottom: 24px;
+        max-width: 100%;
+        padding: 6px;
+        gap: 5px;
+    }
+
+    .tab {
+        font-size: 14px;
+        height: 42px;
+    }
+
+    .active-tab {
+        height: 42px;
+    }
+
+    .activecontactdiv {
+        padding: 20px;
+        gap: 18px;
+    }
+
+    .active-content ul li {
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    /* About */
+    .aboutSection {
+        padding: 36px 20px 44px;
+    }
+
+    .aboutCards {
+        gap: 44px;
+        margin-top: 40px;
+    }
+
+    .profileImg {
+        height: 300px;
+    }
+
+    .gradientBar {
+        padding: 20px 18px;
+    }
+
+    .textBox {
+        padding: 16px 18px 18px;
+    }
+
+    .name {
+        font-size: 24px;
+    }
+
+    .role {
+        font-size: 17px;
+    }
+
+    .desc {
+        font-size: 13px;
+    }
+
+    /* Clients */
     .clientsSection {
         padding: 32px 20px;
         gap: 22px;
     }
 
     .clientsHeading {
-        font-size: 42px;
+        font-size: 34px;
     }
 
     .logos {
         gap: 20px 24px;
     }
 
+    .logos img {
+        height: 68px;
+    }
+
+    /* Footer */
+    .footer-top {
+        gap: 18px;
+        padding: 24px 20px 26px;
+    }
+
     .footer-logo {
-        max-width: 240px;
+        width: 190px;
+    }
+
+    .footer-nav {
+        gap: 12px;
+    }
+
+    .footer-nav a {
+        font-size: 15px;
+    }
+
+    .footer-contact {
+        gap: 14px;
+        padding: 14px 20px 22px;
+    }
+
+    .footer-contact-item {
+        gap: 12px;
+    }
+
+    .footer-icon {
+        width: 42px;
+        height: 42px;
+    }
+
+    .footer-label {
+        font-size: 14px;
+    }
+
+    .footer-value {
+        font-size: 16px;
+    }
+
+    .footer-bottom {
+        height: 38px;
+    }
+
+    .footer-bottom p {
+        font-size: 13px;
     }
 }
 
-/* 600px */
+/* 600px — Small Mobile */
 @media (max-width: 600px) {
+
+    /* Navbar */
+    .navbar {
+        padding: 11px 18px;
+    }
+
+    .logonavbar {
+        height: 34px;
+    }
+
+    .menu-toggle {
+        width: 26px;
+        height: 18px;
+    }
+
+    /* Hero */
     .hero {
-        padding-top: 180px;
-        padding-bottom: 100px;
+        padding: 128px 14px 70px;
     }
 
     .hero-subtitle {
-        font-size: 18px;
-        margin-bottom: 30px;
+        font-size: 14px;
+        margin-bottom: 24px;
+        letter-spacing: 0.18em;
     }
 
     .hero-title {
-        font-size: 38px;
-        line-height: 46px;
-        margin-bottom: 40px;
+        font-size: 36px;
+        line-height: 44px;
+        margin-bottom: 36px;
     }
 
     .btn-show-me {
-        height: 58px;
-        padding: 0 35px;
-        font-size: 20px;
+        height: 54px;
+        padding: 0 28px;
+        font-size: 17.5px;
+    }
+
+    .arrow {
+        width: 15px;
+        height: 15px;
+    }
+
+    /* Next-level */
+    .next-level-container {
+        padding: 30px 16px 32px;
+        gap: 24px;
+    }
+
+    .next-level-bg {
+        display: none;
+    }
+
+    .next-level-image-wrapper {
+        min-height: 300px;
+    }
+
+    .quote-text {
+        font-size: 17px;
+        line-height: 25px;
+        padding: 18px 16px;
+    }
+
+    .quote-author {
+        font-size: 15px;
+        line-height: 26px;
+        padding: 0 16px 16px;
+    }
+
+    .next-level-subtitle,
+    .services-subtitle,
+    .aboutTag {
+        font-size: 13px;
+        margin-bottom: 9px;
+    }
+
+    .next-level-title,
+    .services-title,
+    .aboutHeading,
+    .active-content .title {
+        font-size: 25px;
+        line-height: 1.22;
+    }
+
+    .next-level-title {
+        margin-bottom: 14px;
+    }
+
+    .services-title {
+        margin-bottom: 24px;
+    }
+
+    .aboutHeading {
+        margin-bottom: 24px;
+    }
+
+    .next-level-desc {
+        font-size: 13.5px;
+        line-height: 162%;
+        margin-bottom: 16px;
+    }
+
+    .logos-row {
+        gap: 18px;
+    }
+
+    .logos-row img {
+        max-height: 42px;
+        max-width: 120px;
+    }
+
+    /* Services — tabs switch to full-width */
+    .what-we-do {
+        padding: 34px 16px 40px;
     }
 
     .tabs-container {
@@ -2081,232 +3175,1477 @@ body {
         width: 100%;
         padding: 8px;
         gap: 6px;
+        margin-bottom: 22px;
     }
 
     .tab {
         width: 100%;
-        height: 48px;
+        height: 46px;
         padding: 0 15px;
-        font-size: 16px;
+        font-size: 15px;
     }
 
     .active-tab {
         width: 100%;
-        height: 48px;
+        height: 46px;
     }
 
-    .next-level-bg {
-        display: none;
-        /* Hide background circle on tiny screen sizes for cleaner look */
+    .activecontactdiv {
+        padding: 18px 16px;
+        gap: 16px;
+        border-radius: 8px;
     }
 
-    .aboutSection,
-    .next-level-container,
-    .what-we-do {
-        padding: 40px 20px;
-    }
-
-    .clientsSection {
-        padding: 28px 18px;
-        gap: 20px;
-    }
-
-    .clientsHeading {
-        font-size: 36px;
-    }
-
-    .logos {
-        gap: 18px 20px;
-    }
-}
-
-/* 500px */
-@media (max-width: 500px) {
-    .hero-title {
-        font-size: 32px;
-        line-height: 40px;
-    }
-
-    .next-level-title,
-    .services-title,
-    .aboutHeading,
     .active-content .title {
-        font-size: 28px;
-        line-height: 36px;
+        margin-bottom: 15px;
     }
 
-    .quote-text {
-        padding: 16px;
+    .active-content ul li {
+        font-size: 15px;
+        line-height: 28px;
+    }
+
+    /* About */
+    .aboutSection {
+        padding: 34px 16px 40px;
+    }
+
+    .aboutCards {
+        gap: 40px;
+        margin-top: 36px;
     }
 
     .profileImg {
         height: 260px;
     }
 
+    .gradientBar {
+        padding: 18px 16px;
+    }
+
+    .textBox {
+        padding: 14px 16px 16px;
+    }
+
     .name {
-        font-size: 26px;
-    }
-
-    .role {
-        font-size: 18px;
-    }
-
-    .footer-label {
-        font-size: 20px;
-    }
-
-    .footer-value {
         font-size: 22px;
     }
 
-    .footer-bottom p {
-        font-size: 14px;
-    }
-
-    .clientsSection {
-        padding: 24px 16px;
-        gap: 18px;
-    }
-
-    .clientsHeading {
-        font-size: 32px;
-    }
-
-    .logos {
-        gap: 16px 18px;
-    }
-}
-
-/* 440px */
-@media (max-width: 440px) {
-    .hero-title {
-        font-size: 30px;
-        line-height: 36px;
-    }
-
-    .clientsHeading {
-        font-size: 30px;
-    }
-
-    .logos {
-        gap: 14px 16px;
-    }
-}
-
-/* 415px */
-@media (max-width: 415px) {
-    .navbar {
-        padding: 15px 20px;
-    }
-
-    .hero-subtitle {
+    .role {
         font-size: 16px;
     }
 
+    .desc {
+        font-size: 13px;
+    }
+
+    /* Clients */
     .clientsSection {
-        padding: 22px 14px;
+        padding: 28px 16px;
+        gap: 20px;
     }
 
     .clientsHeading {
-        font-size: 28px;
-    }
-}
-
-/* 400px */
-@media (max-width: 400px) {
-    .hero-title {
-        font-size: 28px;
-        line-height: 34px;
-    }
-
-    .clientsSection {
-        padding: 22px 14px;
-        gap: 16px;
-    }
-
-    .clientsHeading {
-        font-size: 26px;
+        font-size: 30px;
     }
 
     .logos {
-        gap: 12px 14px;
+        gap: 18px 20px;
+    }
+
+    .logos img {
+        height: 60px;
+    }
+
+    /* Footer */
+    .footer-top {
+        gap: 16px;
+        padding: 22px 18px 24px;
+    }
+
+    .footer-logo {
+        width: 180px;
+    }
+
+    .footer-nav {
+        gap: 11px;
+    }
+
+    .footer-nav a {
+        font-size: 14.5px;
+    }
+
+    .footer-contact {
+        gap: 13px;
+        padding: 13px 18px 20px;
+    }
+
+    .footer-contact-item {
+        gap: 11px;
+    }
+
+    .footer-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .footer-label {
+        font-size: 13px;
+    }
+
+    .footer-value {
+        font-size: 15px;
+    }
+
+    .footer-bottom {
+        height: 36px;
+    }
+
+    .footer-bottom p {
+        font-size: 12.5px;
     }
 }
 
-/* 390px */
-@media (max-width: 390px) {
+/* 500px — Tiny Mobile */
+@media (max-width: 500px) {
+
+    /* Navbar */
+    .navbar {
+        padding: 11px 16px;
+    }
+
+    .logonavbar {
+        height: 32px;
+    }
+
+    /* Hero */
+    .hero {
+        padding: 120px 14px 64px;
+    }
+
+    .hero-subtitle {
+        font-size: 13px;
+        margin-bottom: 22px;
+        letter-spacing: 0.16em;
+    }
+
+    .hero-title {
+        font-size: 30px;
+        line-height: 38px;
+        margin-bottom: 32px;
+    }
+
+    .btn-show-me {
+        height: 52px;
+        padding: 0 26px;
+        font-size: 16.5px;
+        border-radius: 9px;
+    }
+
+    .arrow {
+        width: 14px;
+        height: 14px;
+    }
+
+    /* Next-level */
+    .next-level-container {
+        padding: 28px 16px 30px;
+        gap: 22px;
+    }
+
+    .next-level-image-wrapper {
+        min-height: 280px;
+        border-radius: 10px;
+    }
+
+    .quote-text {
+        font-size: 16px;
+        line-height: 24px;
+        padding: 16px 14px;
+    }
+
+    .quote-author {
+        font-size: 14px;
+        line-height: 24px;
+        padding: 0 14px 14px;
+    }
+
+    .next-level-subtitle,
+    .services-subtitle,
+    .aboutTag {
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
 
     .next-level-title,
     .services-title,
     .aboutHeading,
     .active-content .title {
-        font-size: 25px;
-        line-height: 32px;
+        font-size: 23px;
+        line-height: 1.25;
+    }
+
+    .next-level-title {
+        margin-bottom: 13px;
+    }
+
+    .services-title {
+        margin-bottom: 22px;
+    }
+
+    .aboutHeading {
+        margin-bottom: 22px;
+    }
+
+    .next-level-desc {
+        font-size: 13px;
+        margin-bottom: 14px;
+    }
+
+    .logos-row {
+        gap: 16px;
+    }
+
+    .logos-row img {
+        max-height: 38px;
+        max-width: 110px;
+    }
+
+    /* Services */
+    .what-we-do {
+        padding: 32px 16px 38px;
+    }
+
+    .tabs-container {
+        margin-bottom: 20px;
+    }
+
+    .tab {
+        height: 44px;
+        font-size: 14.5px;
+    }
+
+    .active-tab {
+        height: 44px;
+    }
+
+    .activecontactdiv {
+        padding: 16px 14px;
+        gap: 14px;
+    }
+
+    .active-content .title {
+        margin-bottom: 13px;
+    }
+
+    .active-content ul li {
+        font-size: 14.5px;
+        line-height: 26px;
+    }
+
+    /* About */
+    .aboutSection {
+        padding: 32px 16px 38px;
+    }
+
+    .aboutCards {
+        gap: 36px;
+        margin-top: 32px;
     }
 
     .profileImg {
         height: 220px;
     }
 
-    .clientsHeading {
-        font-size: 26px;
+    .gradientBar {
+        padding: 16px 14px;
     }
-}
 
-/* 350px */
-@media (max-width: 350px) {
-    .hero-title {
-        font-size: 25px;
-        line-height: 30px;
+    .textBox {
+        padding: 12px 14px 14px;
     }
 
     .name {
-        font-size: 22px;
+        font-size: 20px;
     }
 
     .role {
-        font-size: 16px;
+        font-size: 15px;
+    }
+
+    .desc {
+        font-size: 12.5px;
+    }
+
+    /* Clients */
+    .clientsSection {
+        padding: 26px 14px;
+        gap: 18px;
+    }
+
+    .clientsHeading {
+        font-size: 27px;
+    }
+
+    .logos {
+        gap: 16px 18px;
+    }
+
+    .logos img {
+        height: 54px;
+    }
+
+    /* Footer */
+    .footer-top {
+        gap: 14px;
+        padding: 20px 16px 22px;
+    }
+
+    .footer-logo {
+        width: 170px;
+    }
+
+    .footer-nav {
+        gap: 10px;
+    }
+
+    .footer-nav a {
+        font-size: 14px;
+    }
+
+    .footer-contact {
+        gap: 12px;
+        padding: 12px 16px 18px;
+    }
+
+    .footer-contact-item {
+        gap: 10px;
+    }
+
+    .footer-icon {
+        width: 38px;
+        height: 38px;
+    }
+
+    .footer-label {
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+
+    .footer-value {
+        font-size: 14.5px;
+    }
+
+    .footer-bottom {
+        height: 34px;
     }
 
     .footer-bottom p {
         font-size: 12px;
     }
+}
+
+/* 440px — Very Small Phones */
+@media (max-width: 440px) {
+
+    /* Navbar */
+    .navbar {
+        padding: 10px 14px;
+    }
+
+    .logonavbar {
+        height: 30px;
+    }
+
+    /* Hero */
+    .hero {
+        padding: 114px 12px 60px;
+    }
+
+    .hero-subtitle {
+        font-size: 12px;
+        margin-bottom: 20px;
+        letter-spacing: 0.14em;
+    }
+
+    .hero-title {
+        font-size: 28px;
+        line-height: 36px;
+        margin-bottom: 30px;
+    }
+
+    .btn-show-me {
+        height: 50px;
+        padding: 0 24px;
+        font-size: 16px;
+    }
+
+    .arrow {
+        width: 13px;
+        height: 13px;
+    }
+
+    /* Next-level */
+    .next-level-container {
+        padding: 26px 14px 28px;
+        gap: 20px;
+    }
+
+    .next-level-image-wrapper {
+        min-height: 260px;
+    }
+
+    .quote-text {
+        font-size: 15px;
+        line-height: 22px;
+        padding: 14px 12px;
+    }
+
+    .quote-author {
+        font-size: 13.5px;
+        line-height: 22px;
+        padding: 0 12px 12px;
+    }
+
+    .next-level-subtitle,
+    .services-subtitle,
+    .aboutTag {
+        font-size: 11.5px;
+        margin-bottom: 7px;
+    }
+
+    .next-level-title,
+    .services-title,
+    .aboutHeading,
+    .active-content .title {
+        font-size: 21px;
+        line-height: 1.25;
+    }
+
+    .next-level-title {
+        margin-bottom: 12px;
+    }
+
+    .services-title {
+        margin-bottom: 20px;
+    }
+
+    .aboutHeading {
+        margin-bottom: 20px;
+    }
+
+    .next-level-desc {
+        font-size: 12.5px;
+        line-height: 160%;
+        margin-bottom: 13px;
+    }
+
+    .logos-row img {
+        max-height: 34px;
+        max-width: 100px;
+    }
+
+    /* Services */
+    .what-we-do {
+        padding: 30px 14px 36px;
+    }
+
+    .tabs-container {
+        padding: 6px;
+        gap: 5px;
+        margin-bottom: 18px;
+    }
+
+    .tab {
+        height: 42px;
+        font-size: 14px;
+    }
+
+    .active-tab {
+        height: 42px;
+    }
+
+    .activecontactdiv {
+        padding: 14px 12px;
+        gap: 13px;
+    }
+
+    .active-content ul li {
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+    /* About */
+    .aboutSection {
+        padding: 30px 14px 36px;
+    }
+
+    .aboutCards {
+        gap: 32px;
+        margin-top: 28px;
+    }
+
+    .profileImg {
+        height: 200px;
+    }
+
+    .gradientBar {
+        padding: 15px 12px;
+    }
+
+    .textBox {
+        padding: 11px 12px 12px;
+    }
+
+    .name {
+        font-size: 19px;
+    }
+
+    .role {
+        font-size: 14px;
+    }
+
+    .desc {
+        font-size: 12px;
+    }
+
+    /* Clients */
+    .clientsSection {
+        padding: 24px 14px;
+        gap: 16px;
+    }
+
+    .clientsHeading {
+        font-size: 25px;
+    }
+
+    .logos {
+        gap: 14px 16px;
+    }
+
+    .logos img {
+        height: 50px;
+    }
+
+    /* Footer */
+    .footer-top {
+        gap: 13px;
+        padding: 18px 14px 20px;
+    }
+
+    .footer-logo {
+        width: 160px;
+    }
+
+    .footer-nav {
+        gap: 9px;
+    }
+
+    .footer-nav a {
+        font-size: 13.5px;
+    }
+
+    .footer-contact {
+        gap: 11px;
+        padding: 11px 14px 16px;
+    }
+
+    .footer-contact-item {
+        gap: 9px;
+    }
+
+    .footer-icon {
+        width: 36px;
+        height: 36px;
+    }
+
+    .footer-label {
+        font-size: 12.5px;
+    }
+
+    .footer-value {
+        font-size: 14px;
+    }
+
+    .footer-bottom {
+        height: 32px;
+    }
+
+    .footer-bottom p {
+        font-size: 11.5px;
+    }
+}
+
+/* 415px — iPhone SE-ish */
+@media (max-width: 415px) {
+
+    .navbar {
+        padding: 10px 12px;
+    }
+
+    .logonavbar {
+        height: 28px;
+    }
+
+    .hero {
+        padding: 110px 12px 56px;
+    }
+
+    .hero-subtitle {
+        font-size: 11.5px;
+        margin-bottom: 18px;
+        letter-spacing: 0.13em;
+    }
+
+    .hero-title {
+        font-size: 26px;
+        line-height: 34px;
+        margin-bottom: 28px;
+    }
+
+    .btn-show-me {
+        height: 48px;
+        padding: 0 22px;
+        font-size: 15.5px;
+    }
+
+    .next-level-container {
+        padding: 24px 14px 26px;
+        gap: 19px;
+    }
+
+    .next-level-image-wrapper {
+        min-height: 240px;
+    }
+
+    .quote-text {
+        font-size: 14.5px;
+        line-height: 21px;
+        padding: 13px 11px;
+    }
+
+    .quote-author {
+        font-size: 13px;
+        padding: 0 11px 11px;
+    }
+
+    .next-level-subtitle,
+    .services-subtitle,
+    .aboutTag {
+        font-size: 11px;
+    }
+
+    .next-level-title,
+    .services-title,
+    .aboutHeading,
+    .active-content .title {
+        font-size: 20px;
+    }
+
+    .next-level-desc {
+        font-size: 12px;
+    }
+
+    .logos-row img {
+        max-height: 32px;
+        max-width: 92px;
+    }
+
+    .what-we-do,
+    .aboutSection {
+        padding: 28px 14px 34px;
+    }
+
+    .tab {
+        height: 41px;
+        font-size: 13.5px;
+    }
+
+    .active-tab {
+        height: 41px;
+    }
+
+    .aboutCards {
+        gap: 30px;
+        margin-top: 26px;
+    }
+
+    .profileImg {
+        height: 190px;
+    }
+
+    .name {
+        font-size: 18px;
+    }
+
+    .role {
+        font-size: 13.5px;
+    }
 
     .clientsSection {
-        padding: 20px 12px;
+        padding: 22px 12px;
+        gap: 15px;
+    }
+
+    .clientsHeading {
+        font-size: 23px;
+    }
+
+    .logos img {
+        height: 46px;
+    }
+
+    .footer-top {
+        padding: 17px 12px 19px;
+    }
+
+    .footer-logo {
+        width: 150px;
+    }
+
+    .footer-nav a {
+        font-size: 13px;
+    }
+
+    .footer-contact {
+        padding: 10px 12px 15px;
+    }
+
+    .footer-icon {
+        width: 34px;
+        height: 34px;
+    }
+
+    .footer-value {
+        font-size: 13.5px;
+    }
+
+    .footer-bottom {
+        height: 31px;
+    }
+
+    .footer-bottom p {
+        font-size: 11px;
+    }
+}
+
+/* 400px */
+@media (max-width: 400px) {
+
+    .navbar {
+        padding: 9px 12px;
+    }
+
+    .hero {
+        padding: 106px 10px 54px;
+    }
+
+    .hero-title {
+        font-size: 25px;
+        line-height: 32px;
+        margin-bottom: 26px;
+    }
+
+    .hero-subtitle {
+        font-size: 11px;
+    }
+
+    .btn-show-me {
+        height: 47px;
+        padding: 0 20px;
+        font-size: 15px;
+    }
+
+    .next-level-container {
+        padding: 23px 12px 25px;
+        gap: 18px;
+    }
+
+    .next-level-image-wrapper {
+        min-height: 230px;
+    }
+
+    .quote-text {
+        font-size: 14px;
+        line-height: 20px;
+        padding: 12px 10px;
+    }
+
+    .quote-author {
+        font-size: 12.5px;
+        line-height: 20px;
+    }
+
+    .next-level-title,
+    .services-title,
+    .aboutHeading,
+    .active-content .title {
+        font-size: 19px;
+    }
+
+    .next-level-desc {
+        font-size: 11.5px;
+    }
+
+    .logos-row img {
+        max-height: 30px;
+        max-width: 88px;
+    }
+
+    .what-we-do,
+    .aboutSection {
+        padding: 27px 12px 33px;
+    }
+
+    .aboutCards {
+        gap: 28px;
+        margin-top: 24px;
+    }
+
+    .profileImg {
+        height: 180px;
+    }
+
+    .gradientBar {
+        padding: 14px 11px;
+    }
+
+    .name {
+        font-size: 17.5px;
+    }
+
+    .role {
+        font-size: 13px;
+    }
+
+    .desc {
+        font-size: 11.5px;
+    }
+
+    .clientsSection {
+        padding: 22px 12px;
         gap: 14px;
     }
 
     .clientsHeading {
+        font-size: 22px;
+    }
+
+    .logos {
+        gap: 12px 14px;
+    }
+
+    .logos img {
+        height: 44px;
+    }
+
+    .footer-logo {
+        width: 145px;
+    }
+
+    .footer-icon {
+        width: 33px;
+        height: 33px;
+    }
+
+    .footer-value {
+        font-size: 13px;
+    }
+}
+
+/* 390px — iPhone 12/13 Mini */
+@media (max-width: 390px) {
+
+    .navbar {
+        padding: 9px 10px;
+    }
+
+    .logonavbar {
+        height: 26px;
+    }
+
+    .hero {
+        padding: 104px 10px 52px;
+    }
+
+    .hero-subtitle {
+        font-size: 10.5px;
+        letter-spacing: 0.12em;
+        margin-bottom: 17px;
+    }
+
+    .hero-title {
         font-size: 24px;
+        line-height: 31px;
+        margin-bottom: 25px;
+    }
+
+    .btn-show-me {
+        height: 46px;
+        padding: 0 20px;
+        font-size: 14.5px;
+    }
+
+    .arrow {
+        width: 12px;
+        height: 12px;
+    }
+
+    .next-level-container {
+        padding: 22px 12px 24px;
+        gap: 17px;
+    }
+
+    .next-level-image-wrapper {
+        min-height: 225px;
+    }
+
+    .quote-text {
+        font-size: 13.5px;
+        line-height: 19px;
+        padding: 11px 10px;
+    }
+
+    .quote-author {
+        font-size: 12px;
+    }
+
+    .next-level-subtitle,
+    .services-subtitle,
+    .aboutTag {
+        font-size: 10.5px;
+    }
+
+    .next-level-title,
+    .services-title,
+    .aboutHeading,
+    .active-content .title {
+        font-size: 18px;
+        line-height: 1.3;
+    }
+
+    .next-level-desc {
+        font-size: 11.5px;
+    }
+
+    .logos-row img {
+        max-height: 28px;
+        max-width: 82px;
+    }
+
+    .what-we-do,
+    .aboutSection {
+        padding: 26px 12px 32px;
+    }
+
+    .tab {
+        height: 40px;
+        font-size: 13px;
+    }
+
+    .active-tab {
+        height: 40px;
+    }
+
+    .active-content ul li {
+        font-size: 13.5px;
+        line-height: 24px;
+    }
+
+    .aboutCards {
+        gap: 27px;
+        margin-top: 22px;
+    }
+
+    .profileImg {
+        height: 175px;
+    }
+
+    .name {
+        font-size: 17px;
+    }
+
+    .role {
+        font-size: 12.5px;
+    }
+
+    .desc {
+        font-size: 11px;
+    }
+
+    .clientsSection {
+        padding: 21px 10px;
+        gap: 14px;
+    }
+
+    .clientsHeading {
+        font-size: 21px;
+    }
+
+    .logos img {
+        height: 42px;
+    }
+
+    .footer-top {
+        padding: 16px 10px 18px;
+        gap: 12px;
+    }
+
+    .footer-logo {
+        width: 140px;
+    }
+
+    .footer-nav {
+        gap: 8px;
+    }
+
+    .footer-nav a {
+        font-size: 12.5px;
+    }
+
+    .footer-contact {
+        gap: 10px;
+        padding: 9px 10px 14px;
+    }
+
+    .footer-contact-item {
+        gap: 8px;
+    }
+
+    .footer-icon {
+        width: 32px;
+        height: 32px;
+    }
+
+    .footer-label {
+        font-size: 12px;
+    }
+
+    .footer-value {
+        font-size: 12.5px;
+    }
+
+    .footer-bottom {
+        height: 30px;
+    }
+
+    .footer-bottom p {
+        font-size: 10.5px;
+    }
+}
+
+/* 350px — Very Tiny Phones */
+@media (max-width: 350px) {
+
+    .navbar {
+        padding: 9px 10px;
+    }
+
+    .logonavbar {
+        height: 24px;
+    }
+
+    .menu-toggle {
+        width: 24px;
+        height: 16px;
+    }
+
+    .hero {
+        padding: 98px 10px 48px;
+    }
+
+    .hero-subtitle {
+        font-size: 10px;
+        letter-spacing: 0.11em;
+        margin-bottom: 16px;
+    }
+
+    .hero-title {
+        font-size: 22px;
+        line-height: 28px;
+        margin-bottom: 23px;
+    }
+
+    .btn-show-me {
+        height: 44px;
+        padding: 0 18px;
+        font-size: 14px;
+        border-radius: 8px;
+    }
+
+    .next-level-container {
+        padding: 20px 10px 22px;
+        gap: 16px;
+    }
+
+    .next-level-image-wrapper {
+        min-height: 210px;
+    }
+
+    .quote-text {
+        font-size: 12.5px;
+        line-height: 18px;
+        padding: 10px 9px;
+    }
+
+    .quote-author {
+        font-size: 11.5px;
+        line-height: 18px;
+    }
+
+    .next-level-subtitle,
+    .services-subtitle,
+    .aboutTag {
+        font-size: 10px;
+    }
+
+    .next-level-title,
+    .services-title,
+    .aboutHeading,
+    .active-content .title {
+        font-size: 17px;
+    }
+
+    .next-level-desc {
+        font-size: 11px;
+        line-height: 155%;
+    }
+
+    .logos-row img {
+        max-height: 26px;
+        max-width: 74px;
+    }
+
+    .what-we-do,
+    .aboutSection {
+        padding: 24px 10px 30px;
+    }
+
+    .tabs-container {
+        padding: 5px;
+        gap: 4px;
+        margin-bottom: 16px;
+    }
+
+    .tab {
+        height: 38px;
+        font-size: 12.5px;
+    }
+
+    .active-tab {
+        height: 38px;
+    }
+
+    .activecontactdiv {
+        padding: 13px 11px;
+        gap: 12px;
+    }
+
+    .active-content ul li {
+        font-size: 13px;
+        line-height: 23px;
+    }
+
+    .aboutCards {
+        gap: 24px;
+        margin-top: 20px;
+    }
+
+    .profileImg {
+        height: 160px;
+    }
+
+    .gradientBar {
+        padding: 13px 10px;
+    }
+
+    .textBox {
+        padding: 10px 10px 11px;
+    }
+
+    .name {
+        font-size: 16px;
+    }
+
+    .role {
+        font-size: 12px;
+    }
+
+    .desc {
+        font-size: 11px;
+    }
+
+    .clientsSection {
+        padding: 20px 10px;
+        gap: 13px;
+    }
+
+    .clientsHeading {
+        font-size: 20px;
     }
 
     .logos {
         gap: 10px 12px;
     }
+
+    .logos img {
+        height: 38px;
+    }
+
+    .footer-top {
+        padding: 15px 10px 17px;
+        gap: 11px;
+    }
+
+    .footer-logo {
+        width: 130px;
+    }
+
+    .footer-nav {
+        gap: 7px;
+    }
+
+    .footer-nav a {
+        font-size: 12px;
+    }
+
+    .footer-contact {
+        gap: 9px;
+        padding: 9px 10px 13px;
+    }
+
+    .footer-contact-item {
+        gap: 7px;
+    }
+
+    .footer-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .footer-label {
+        font-size: 11.5px;
+    }
+
+    .footer-value {
+        font-size: 12px;
+    }
+
+    .footer-bottom {
+        height: 29px;
+    }
+
+    .footer-bottom p {
+        font-size: 10px;
+    }
 }
 
-/* 320px */
+/* 320px — Minimum Support Size */
 @media (max-width: 320px) {
+
+    .navbar {
+        padding: 8px 8px;
+    }
+
+    .logonavbar {
+        height: 22px;
+    }
+
+    .hero {
+        padding: 94px 8px 44px;
+    }
+
+    .hero-subtitle {
+        font-size: 9.5px;
+        letter-spacing: 0.1em;
+        margin-bottom: 14px;
+    }
+
     .hero-title {
-        font-size: 22px;
-        line-height: 28px;
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 22px;
+    }
+
+    .btn-show-me {
+        height: 42px;
+        padding: 0 16px;
+        font-size: 13px;
+        border-radius: 7px;
+    }
+
+    .arrow {
+        width: 11px;
+        height: 11px;
+    }
+
+    .next-level-container {
+        padding: 18px 10px 20px;
+        gap: 15px;
+    }
+
+    .next-level-image-wrapper {
+        min-height: 195px;
+        border-radius: 8px;
+    }
+
+    .quote-text {
+        font-size: 12px;
+        line-height: 17px;
+        padding: 9px 8px;
+    }
+
+    .quote-author {
+        font-size: 11px;
+        line-height: 17px;
+        padding: 0 8px 10px;
+    }
+
+    .next-level-subtitle,
+    .services-subtitle,
+    .aboutTag {
+        font-size: 9.5px;
+        letter-spacing: 0.22em;
+    }
+
+    .next-level-title,
+    .services-title,
+    .aboutHeading,
+    .active-content .title {
+        font-size: 16px;
+        line-height: 1.3;
+    }
+
+    .next-level-desc {
+        font-size: 10.5px;
+    }
+
+    .logos-row img {
+        max-height: 24px;
+        max-width: 68px;
+    }
+
+    .what-we-do,
+    .aboutSection {
+        padding: 22px 10px 28px;
+    }
+
+    .tabs-container {
+        padding: 4px;
+        gap: 3px;
+        margin-bottom: 15px;
+    }
+
+    .tab {
+        height: 37px;
+        font-size: 12px;
+    }
+
+    .active-tab {
+        height: 37px;
+    }
+
+    .activecontactdiv {
+        padding: 12px 10px;
+        gap: 11px;
+        border-radius: 7px;
+    }
+
+    .active-content ul li {
+        font-size: 12.5px;
+        line-height: 22px;
+    }
+
+    .aboutCards {
+        gap: 22px;
+        margin-top: 18px;
+    }
+
+    .profileImg {
+        height: 150px;
+    }
+
+    .gradientBar {
+        padding: 12px 9px;
+    }
+
+    .textBox {
+        padding: 9px 9px 10px;
+    }
+
+    .name {
+        font-size: 15px;
+    }
+
+    .role {
+        font-size: 11.5px;
+    }
+
+    .desc {
+        font-size: 10.5px;
     }
 
     .clientsSection {
-        padding: 18px 10px;
+        padding: 18px 8px;
         gap: 12px;
     }
 
     .clientsHeading {
-        font-size: 22px;
+        font-size: 18px;
     }
 
     .logos {
         gap: 8px 10px;
     }
 
-    .footer-bottom p {
+    .logos img {
+        height: 34px;
+    }
+
+    .footer-top {
+        padding: 14px 8px 16px;
+        gap: 10px;
+    }
+
+    .footer-logo {
+        width: 120px;
+    }
+
+    .footer-nav {
+        gap: 6px;
+    }
+
+    .footer-nav a {
+        font-size: 11.5px;
+    }
+
+    .footer-contact {
+        gap: 8px;
+        padding: 8px 8px 12px;
+    }
+
+    .footer-contact-item {
+        gap: 6px;
+    }
+
+    .footer-icon {
+        width: 28px;
+        height: 28px;
+    }
+
+    .footer-label {
         font-size: 11px;
+    }
+
+    .footer-value {
+        font-size: 11.5px;
+    }
+
+    .footer-bottom {
+        height: 28px;
+    }
+
+    .footer-bottom p {
+        font-size: 9.5px;
     }
 }
