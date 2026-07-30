@@ -21,9 +21,9 @@
             <span class="bar"></span>
         </div>
         <nav class="nav-links">
-            <a href="#" class="active">About</a>
-            <a href="#">Services</a>
-            <a href="#">Contact</a>
+            <a href="#about" class="active">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
 
@@ -69,7 +69,7 @@
     </section>
 
     <!-- Services Section -->
-    <section class="what-we-do">
+    <section class="what-we-do" id="services">
         <p class="services-subtitle reveal fade-in">What We Do</p>
         <h2 class="services-title reveal fade-in">Our Services</h2>
 
@@ -94,7 +94,7 @@
 
     </section>
 
-    <section class="aboutSection">
+    <section class="aboutSection" id="about">
         <p class="aboutTag reveal fade-in">ABOUT US</p>
         <h2 class="aboutHeading reveal fade-in">The People Behind Key-East</h2>
 
@@ -150,36 +150,40 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" id="contact">
         <div class="footer-top">
             <a href="#" class="footer-logo-link">
                 <img src="Images/footerlogo.svg" alt="Key-East Logo" class="footer-logo" />
             </a>
             <nav class="footer-nav">
-                <a href="#" class="footer-nav-active">About</a>
-                <a href="#">Services</a>
-                <a href="#">Contact</a>
+                <a href="#about" class="footer-nav-active">About</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
             </nav>
         </div>
 
         <div class="footer-contact">
-            <div class="footer-contact-item">
-                <img src="Images/location.svg" alt="Location" class="footer-icon" />
-                <div class="footer-contact-text">
-                    <p class="footer-label">Location</p>
-                    <p class="footer-value">Avon-By-The-Sea, NJ</p>
+            <a href="https://www.google.com/maps/search/?api=1&query=Avon-By-The-Sea,New+Jersey" target="_blank" rel="noopener noreferrer" class="footer-contact-link">
+                <div class="footer-contact-item">
+                    <img src="Images/location.svg" alt="Location" class="footer-icon" />
+                    <div class="footer-contact-text">
+                        <p class="footer-label">Location</p>
+                        <p class="footer-value">Avon-By-The-Sea, NJ</p>
+                    </div>
                 </div>
-            </div>
+            </a>
 
             <div class="footer-divider"></div>
 
-            <div class="footer-contact-item">
-                <img src="Images/envelope.svg" alt="Email" class="footer-icon" />
-                <div class="footer-contact-text">
-                    <p class="footer-label">Email</p>
-                    <p class="footer-value">info@key-east.com</p>
+            <a href="mailto:info@key-east.com" class="footer-contact-link">
+                <div class="footer-contact-item">
+                    <img src="Images/envelope.svg" alt="Email" class="footer-icon" />
+                    <div class="footer-contact-text">
+                        <p class="footer-label">Email</p>
+                        <p class="footer-value">info@key-east.com</p>
+                    </div>
                 </div>
-            </div>
+            </a>
         </div>
 
         <div class="footer-bottom">

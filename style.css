@@ -77,6 +77,15 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+section[id],
+footer[id] {
+    scroll-margin-top: 90px;
+}
+
 body {
     font-family: 'Plus Jakarta Sans', sans-serif;
     overflow-x: hidden;
@@ -785,6 +794,23 @@ body {
     display: flex;
     align-items: center;
     gap: 25px;
+}
+
+.footer-contact-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    cursor: pointer;
+}
+
+.footer-contact-link:hover {
+    transform: translateY(-2px);
+    filter: drop-shadow(0 6px 16px rgba(55, 97, 183, 0.12));
+}
+
+.footer-contact-link:hover .footer-value {
+    color: #274E9E;
 }
 
 
@@ -1543,10 +1569,10 @@ body {
 
     /* Button */
     .btn-show-me {
-        width: 272px;
-        height: 68px;
+        width: 204px;
+        height: 51px;
         border-radius: 12.55px;
-        font-size: 25px;
+        font-size: 18px;
     }
 
     /* Arrow Icon */
@@ -2327,8 +2353,13 @@ body {
         transform: none;
         width: 100%;
         margin-top: 20px;
-        background: rgba(29, 58, 117, 0.95);
         border-radius: 10px;
+    }
+
+    .next-level-image-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .quote-text {
