@@ -574,7 +574,9 @@ body {
 .active-content ul {
     padding: 0;
     margin: 0;
-    list-style: none;
+    padding-left: 32px;
+    list-style: disc;
+    list-style-position: outside;
 }
 
 .active-content ul li {
@@ -583,6 +585,12 @@ body {
     font-size: 26px;
     line-height: 50px;
     color: #1E1E1E;
+    padding-left: 6px;
+}
+
+.active-content ul li::marker {
+    color: #1E1E1E;
+    font-size: 0.7em;
 }
 
 /* IMAGE */
